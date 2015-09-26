@@ -1,0 +1,16 @@
+---
+layout: page
+title: Talks
+---
+
+<div class='posts'>
+  {% for talk in site.talks reversed %}
+  <div class='post'>
+    <h2 class='post-title {{talk.lang}}-icon'>
+      <a href='{{ talk.url }}'>{{ talk.title }}</a>
+    </h2>
+
+    <span class='post-date'>{{ talk.conference | array_to_sentence_string }}</span>
+  </div>
+  {% endfor %}
+</div>

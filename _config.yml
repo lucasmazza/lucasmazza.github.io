@@ -1,0 +1,37 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           none
+relative_permalinks: true
+
+# Setup
+title:               Lucas Mazza
+tagline:             ''
+description:         'Developer @ <a href="http://plataformatec.com.br">Plataformatec</a>.'
+url:                 http://lucasmazza.github.io
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Lucas Mazza
+  url:               https://twitter.com/lucasmazza
+  email:             lucastmazza@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+exclude:
+  - script
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - bin
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:title.html
+
+markdown: redcarpet

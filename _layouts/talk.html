@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-title {{page.lang}}-icon">{{ page.title }}</h1>
+  <p><small>{{ page.conference | array_to_sentence_string }}</small></p>
+  {{ content }}
+</div>

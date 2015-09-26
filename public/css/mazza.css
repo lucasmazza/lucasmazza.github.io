@@ -1,0 +1,67 @@
+pre {
+  max-height: 350px;
+  overflow-y: scroll;
+  font-size: .7rem;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.headshot {
+  float: left;
+  margin-right: 1em;
+}
+
+.br-icon::after,
+.us-icon::after {
+  content: '';
+  position: static;
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  margin-left: .25em;
+  background-size: .5em .5em;
+}
+
+.br-icon::after {
+  background-image: url('/public/icons/br.svg');
+}
+
+.us-icon::after {
+  background-image: url('/public/icons/us.svg');
+}
+
+.comments {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.comments > * { margin: 0; }
+
+.tweet-this { text-align: right; }
+
+.tweet-button {
+  display: inline-block;
+  padding: .5rem .5rem .5rem 2rem;
+  font-size: 75%;
+  color: #fff;
+  background-color: #55acee;
+  background-image: url('/public/icons/twitter.png');
+  background-repeat: no-repeat;
+  background-position: .3rem center;
+  background-size: 1.5rem;
+  border: 1px solid #268bd2;
+  border-radius: 3px;
+  transition: background-color .3s;
+}
+
+.tweet-button:hover {
+  text-decoration: none;
+  background-color: #268bd2;
+}
+
+.related {
+  border-top: 0;
+}

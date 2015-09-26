@@ -1,0 +1,12 @@
+#!/bin/bash
+rm -rf .lanyon
+
+git clone https://github.com/poole/lanyon.git .lanyon -q --depth 1
+
+pushd .lanyon > /dev/null
+  rm -rf _posts _includes/sidebar.html .editorconfig _config.yml README.md LICENSE.md about.md
+popd
+
+cp -r .lanyon/* ./
+
+rm -rf .lanyon
