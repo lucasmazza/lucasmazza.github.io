@@ -65,3 +65,8 @@ pre {
 .related {
   border-top: 0;
 }
+
+.embed-responsive {
+  width: 90%;
+  margin: 0 auto;
+}
