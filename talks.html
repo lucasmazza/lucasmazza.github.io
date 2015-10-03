@@ -8,6 +8,9 @@ title: Talks
   <div class='post'>
     <h2 class='post-title {{talk.lang}}-icon'>
       <a href='{{ talk.url }}'>{{ talk.title }}</a>
+      {% if talk.video %}
+        <span class='emoji-icon' title='video available'>🎥</span>
+      {% endif %}
     </h2>
 
     <span class='post-date'>{{ talk.conference | array_to_sentence_string }}</span>

@@ -3,11 +3,15 @@ layout: talk
 title: Manutenção e Refatoração de CSS
 conference: ['DevFest São Paulo 2013']
 lang: br
+video: true
 ---
 
 ## Video
 
-<iframe width="720" height="405" src="https://www.youtube.com/embed/-HPqguVm2vw" frameborder="0" allowfullscreen></iframe>
+<div class='embed-responsive embed-responsive-16by9'>
+  <iframe class='embed-responsive-item' src='https://www.youtube.com/embed/-HPqguVm2vw'
+  allowfullscreen></iframe>
+</div>
 
 ## Slides
 

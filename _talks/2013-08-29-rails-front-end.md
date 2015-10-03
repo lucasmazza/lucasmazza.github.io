@@ -3,6 +3,7 @@ layout: talk
 title: Rails ama seu Front-end
 conference: ['RubyConf Brasil 2013']
 lang: br
+video: true
 ---
 
 ## Video

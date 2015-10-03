@@ -3,13 +3,17 @@ layout: talk
 title: O que o Front end pode aprender com o Rails
 conference: ['Front in Porto Alegre 2014', 'Tableless Conf 2014']
 lang: br
+video: true
 ---
 
 > O Rails completou 10 anos de vida e diversas lições desses 10 anos podem nos ajudar a construir as fundações para os próximos 10 anos do mundo de front end. Vamos refletir sobre alguns aspectos que ajudaram a stack do framework a evoluir durante os anos e como podemos aplicar isso no mundo de CSS e JS para melhorar as nossas aplicações.
 
 ## Video
 
-<iframe width="720" height="405" src="https://www.youtube.com/embed/2iA-Z_xu3DE?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class='embed-responsive embed-responsive-16by9'>
+  <iframe class='embed-responsive-item' src='https://www.youtube.com/embed/2iA-Z_xu3DE'
+    allowfullscreen></iframe>
+</div>
 
 ## Slides
 

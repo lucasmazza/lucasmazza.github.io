@@ -11,15 +11,25 @@ pre {
   margin-right: 1em;
 }
 
+.emoji-icon {
+  display: inline-block;
+  width: 20px;
+  font-size: 60%;
+  vertical-align: middle;
+  transform: scaleX(-1);
+}
+
 .br-icon::after,
 .us-icon::after {
   content: '';
   position: static;
   display: inline-block;
-  width: .5em;
-  height: .5em;
+  width: .7em;
+  height: .7em;
   margin-left: .25em;
-  background-size: .5em .5em;
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  background-size: .7em .7em;
 }
 
 .br-icon::after {
