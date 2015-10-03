@@ -2,16 +2,17 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+<div class='post'>
+  <h1 class='post-title'>{{ page.title }}</h1>
+  <span class='post-date'>{{ page.date | date_to_string }}</span>
   {{ content }}
 </div>
 
-<div class="comments">
+<div class='comments'>
   <h4>
     Have any feedback on this post? <br /> Let me know at
-    <a href="https://twitter.com/lucasmazza">@lucasmazza</a> on Twitter.
+    <a href='https://twitter.com/lucasmazza' target='_blank'>@lucasmazza</a> on Twitter or
+    <a href='https://github.com/lucasmazza/lucasmazza.github.io/issues/new?title=POST: {{ page.title }}' target='_blank'>start a discussion</a> on this blog GitHub repository.
   </h4>
 </div>
 
@@ -21,13 +22,13 @@ layout: default
   </a>
 </p>
 
-<div class="related">
+<div class='related'>
   <h2>Related Posts</h2>
-  <ul class="related-posts">
+  <ul class='related-posts'>
     {% for post in site.related_posts limit:3 %}
       <li>
         <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
+          <a href='{{ site.baseurl }}{{ post.url }}'>
             {{ post.title }}
             <small>{{ post.date | date_to_string }}</small>
           </a>
