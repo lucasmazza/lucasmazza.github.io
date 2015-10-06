@@ -80,3 +80,12 @@ pre {
   width: 90%;
   margin: 0 auto;
 }
+
+a.book-sidebar-nav-item {
+  color: #CA501F;
+}
+
+a.sidebar-nav-item.book-sidebar-nav-item:hover {
+  background-color: #CA501F;
+  color: #fff;
+}
