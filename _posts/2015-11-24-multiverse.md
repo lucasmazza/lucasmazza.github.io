@@ -18,7 +18,7 @@ the human variables that are part of what makes a good or bad software.
 
 As a helpless sci-fi fan, I like to see all these ecosystems as a series of
 parallel universes where everything can co exist on their own but we can all
-move back in forth through the worlds that we want to be a part of - you can
+move back and forth through the worlds that we want to be a part of - you can
 jump between different frameworks and languages as you wish/need, and they will
 continue to existing on their own and grown thanks to the effort of those on it,
 without having to fight (much) for space and attention with their similar universes.
