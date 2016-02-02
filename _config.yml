@@ -1,8 +1,4 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           none
-relative_permalinks: true
 
 # Setup
 title:               Lucas Mazza
@@ -33,4 +29,17 @@ collections:
     output: true
     permalink: /talks/:title.html
 
-markdown: redcarpet
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+gems:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Jekyll SEO Tag settings
+
+twitter:
+  username: lucasmazza
