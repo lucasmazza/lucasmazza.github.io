@@ -5,17 +5,17 @@ unless ARGV[0]
   exit(-1)
 end
 
-date_prefix = Time.now.strftime("%Y-%m-%d")
+date_prefix = Time.now.strftime('%Y-%m-%d')
 post_name = ARGV.join ' '
 permalink = post_name.strip.downcase.gsub(/[^a-zA-Z0-9]/, '-')
 filename = "#{date_prefix}-#{permalink}.md"
-post = File.expand_path("../_posts/#{filename}", File.dirname(__FILE__))
+post = File.expand_path("../_drafts/#{filename}", File.dirname(__FILE__))
 
 header = <<-END
 ---
 layout: post
 title: #{post_name}
-excerpt: Excerpt goes here...
+description: Description goes here...
 ---
 
 Body text goes here...
@@ -25,6 +25,6 @@ File.open(post, 'w') do |f|
   f << header
 end
 
-editor = ENV['EDITOR'] || "mate"
-system(editor, post)
+editor = ENV['EDITOR']
+system(editor, post) if editor
 exit(0)
