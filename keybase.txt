@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/lucasmazza
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://afterhours.io
+  * I am lucasmazza (https://keybase.io/lucasmazza) on keybase.
+  * I have a public key ASCwaqEHLhwg8aUXSmzTC2yROq1SQYQwGpjAU6L1zs6q9go
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120b06aa1072e1c20f1a5174a6cd30b6c913aad524184301a98c053a2f5ceceaaf60a",
+            "host": "keybase.io",
+            "kid": "0120b06aa1072e1c20f1a5174a6cd30b6c913aad524184301a98c053a2f5ceceaaf60a",
+            "uid": "badb886d446065e146edd54ad54e3619",
+            "username": "lucasmazza"
+        },
+        "service": {
+            "hostname": "afterhours.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.14"
+    },
+    "ctime": 1459984711,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1459984661,
+        "hash": "db0a42a0bd86a70e00353b7b8176e7fd86e518a9a1188be952d4c3a1764b2a5e5613e4faa8fd322f1bea9696a19661e7bdacb644818d5433b6f5fbc113abc771",
+        "seqno": 433008
+    },
+    "prev": "e5b29e05900fa322c1c3abb95bb573c9f595af8c5551f018b8fecc2925d904f6",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgsGqhBy4cIPGlF0ps0wtskTqtUkGEMBqYwFOi9c7OqvYKp3BheWxvYWTFAvZ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYjA2YWExMDcyZTFjMjBmMWE1MTc0YTZjZDMwYjZjOTEzYWFkNTI0MTg0MzAxYTk4YzA1M2EyZjVjZWNlYWFmNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjA2YWExMDcyZTFjMjBmMWE1MTc0YTZjZDMwYjZjOTEzYWFkNTI0MTg0MzAxYTk4YzA1M2EyZjVjZWNlYWFmNjBhIiwidWlkIjoiYmFkYjg4NmQ0NDYwNjVlMTQ2ZWRkNTRhZDU0ZTM2MTkiLCJ1c2VybmFtZSI6Imx1Y2FzbWF6emEifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImFmdGVyaG91cnMuaW8iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE0In0sImN0aW1lIjoxNDU5OTg0NzExLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NTk5ODQ2NjEsImhhc2giOiJkYjBhNDJhMGJkODZhNzBlMDAzNTNiN2I4MTc2ZTdmZDg2ZTUxOGE5YTExODhiZTk1MmQ0YzNhMTc2NGIyYTVlNTYxM2U0ZmFhOGZkMzIyZjFiZWE5Njk2YTE5NjYxZTdiZGFjYjY0NDgxOGQ1NDMzYjZmNWZiYzExM2FiYzc3MSIsInNlcW5vIjo0MzMwMDh9LCJwcmV2IjoiZTViMjllMDU5MDBmYTMyMmMxYzNhYmI5NWJiNTczYzlmNTk1YWY4YzU1NTFmMDE4YjhmZWNjMjkyNWQ5MDRmNiIsInNlcW5vIjo4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQBaO6BmMN/ujJP8/0sV0WHDYxR6sdjM8L6ZmcvMP7UqDhGpLbKJSHP3ihF39BGLHP9LI1ZpqQSHQdyS3qdnOEgaoc2lnX3R5cGUgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lucasmazza
+
+==================================================================
