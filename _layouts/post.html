@@ -5,6 +5,13 @@ layout: default
 <div class='post'>
   <h1 class='post-title'>{{ page.title }}</h1>
   <span class='post-date'>{{ page.date | date_to_string }}</span>
+
+  {% if page.origin %}
+    <div class='origin-notice'>
+      Originally posted at <a href='{{ page.origin }}' target='_blank'>{{ page.origin }}</a>.
+    </div>
+  {% endif %}
+
   {{ content }}
 </div>
 

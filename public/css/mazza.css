@@ -40,9 +40,10 @@ pre {
   background-image: url('/public/icons/us.svg');
 }
 
-.comments {
-  padding: 1rem;
-  margin-bottom: 1rem;
+.comments,
+.origin-notice {
+  padding: 1em;
+  margin-bottom: 1em;
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -88,4 +89,8 @@ a.book-sidebar-nav-item {
 a.sidebar-nav-item.book-sidebar-nav-item:hover {
   background-color: #CA501F;
   color: #fff;
+}
+
+.origin-notice {
+  font-size: .75em;
 }
