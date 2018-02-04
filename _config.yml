@@ -35,7 +35,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-gems:
+plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
