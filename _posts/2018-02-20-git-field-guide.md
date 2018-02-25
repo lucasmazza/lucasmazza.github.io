@@ -34,7 +34,8 @@ expect it to be.
 how you would expect (from commiting to a wrong branch to rebases with absurds conflicts)
 do not panic as not all is broken or lost, and commands like `reflog`, `reset` or
 `rebase` can be extremely useful to recover and fix whatever might have happened
-to your git tree.
+to your git tree. [Oh shit, git!](http://ohshitgit.com) is a tiny but useful
+resource on possible git screw ups and how to fix them.
 
 ## Practices
 
