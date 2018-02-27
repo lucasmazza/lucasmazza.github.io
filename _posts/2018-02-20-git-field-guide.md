@@ -42,10 +42,29 @@ resource on possible git screw ups and how to fix them.
 * **On commit messages**: care about writing good commit messages and read your git history often. Chris
 Beams has probably the [best post on how to write commit messages](https://chris.beams.io/posts/git-commit/)
 and I recommend reading it rather than trying to explain on this post.
-* **When working with feature branches**, Always keep them up to date, with both `git pull` and `git fetch` every now and then.
-* When working on your own feature branches, rebase it early and often with its
-base branch to keep it up to date and conflict free. Fixing conflicts on larger
-rebases will be harder and merges will add noisy commits to your branch's history.
+* **When working with feature branches**, Always keep them up to date, with both `git pull` and `git fetch`
+  every now and then, rebasing it early and often with its base branch (the `master`
+  branch on your remote repository on most cases), and fixing conflicts as soon
+  as they happen. Fixing conflicts on larger rebases will be harder and merges
+  will add noisy commits to your branch's history.
+  ```sh
+  git checkout feature/add-new-stuff
+  # work work work...
+  # download the refs that are on your remote repository, and rebase your feature
+  # branch on top of whatever's is on your remote's master branch, so it will be
+  # up to date. Hopefully no conflicts will need to be fixed.
+  git fetch origin && \
+    git rebase origin/master
+
+  # if you want to make your local `master` branch is up to date as well, do
+  # the following: `git pull` will fetch and rebase the references from your
+  # remote repository, and then rebase the feature branch against the local
+  # master branch instead.
+  git checkout master && \
+    git pull --rebase && \
+    git checkout - && \
+    git rebase master
+  ```
 * **Use [git commit --fixup](https://robots.thoughtbot.com/autosquashing-git-commits)**
 and [interactive rebases](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history)
 to rewrite the history on your feature branches to keep its commits in order and
