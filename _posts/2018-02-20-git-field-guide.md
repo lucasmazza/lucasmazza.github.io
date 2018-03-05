@@ -119,3 +119,8 @@ to the current repository while my global config remains personal.
   Useful when applying small fixes like typos or styleschanges without having to do
   a complete `rebase` operation - don't forget that you will need to push it using `--force`
   when working with remote repositories.
+  * Run an "automatic" interactive rebase to apply your `--fixup` marked commits without going
+  through your editor to describe what the rebase should do with each commit (`!GIT_SEQUENCE_EDITOR=touch git rebase --interactive --autosquash`).
+
+*For more configuration settings and aliases that I use (and don't use), you
+can check my [gitconfig on GitHub](https://github.com/lucasmazza/dotfiles/blob/master/symlinks/gitconfig).*
