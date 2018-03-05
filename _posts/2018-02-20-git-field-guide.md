@@ -71,6 +71,28 @@ to rewrite the history on your feature branches to keep its commits in order and
 organized. Intermediate changes are useful when rolling changes and trying fixes, but
 once the dust has settled you can rework the history to represent the final changes
 you want to introduce.
+  ```sh
+  # So, you added a few files and some commits on your branch
+  git commit -m 'Add README.md'
+  # [master (root-commit) f1a4ab4] Add README.md
+  #  1 file changed, 0 insertions(+), 0 deletions(-)
+  #  create mode 100644 README.md
+  $ git commit -m 'Add CONTRIBUTING.md'
+  # [master e8644e4] Add CONTRIBUTING.md
+  #  1 file changed, 0 insertions(+), 0 deletions(-)
+  #  create mode 100644 CONTRIBUTING.md
+
+  # Now you need to update `README.md` and want to "merge" the new commit with
+  # these new changes to the original commit (f1a4ab4) using an interactive rebase
+  git add README.md
+  git commit --fixup f1a4ab4
+  # [master 13168c2] fixup! Add README.md
+  #  1 file changed, 0 insertions(+), 0 deletions(-)
+
+  # `--autosquash` will prepare the interactive rebase to squash 13168c2 on f1a4ab4
+  # for you.
+  git rebase --interactive --autosquash HEAD~3
+  ```
 * Not all branches/Pull Requests need to be **squashed into a single commit** when
 doing interactive rebases. Squashing too many commits can make bisecting or
 navigating through the history harder than you might want to. You can practice
