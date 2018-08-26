@@ -8,6 +8,12 @@ lang: br
 > Feature toggles são uma técnica muito versátil para ajudar o trabalho de disponibilizar novas funcionalidades em produção sem quebrar a experiência de clientes e fazer entregas graduais, mas acabamos aprendendo sobre toggles de uma forma superficial no dia a dia.
 > Vamos ver um pouco do passado e presente do uso de features toggles, a sua facilidade de uso graças a ferramentas open source e considerações a serem feitas sobre como e quando usar toggles na sua aplicação
 
+## Video
+
+<div class='embed-responsive embed-responsive-16by9'>
+  <iframe class='embed-responsive-item' src='https://www.youtube.com/embed/SSaTZde5vLs'
+    allowfullscreen></iframe>
+</div>
 
 ## Slides - Ruby
 
