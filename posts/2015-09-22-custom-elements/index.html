@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Lucas Mazza | Sane usage of Custom Elements </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Software Engineer, coffee enthusiast, absent blogger">
+    
+    <link rel="stylesheet"
+          href="https://afterhours.io/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
+          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
+          crossorigin="anonymous"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://afterhours.io/css/overrides.bd79f32609bb701f0b5ec583c078889436f3d2ebce0b80eca8602417869948ae.css"
+          integrity="sha256-vXnzJgm7cB8LXsWDwHiIlDbz0uvOC4DsqGAkF4aZSK4="
+          crossorigin="anonymous"
+          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+    <link rel="shortcut icon" href="https://afterhours.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://afterhours.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://afterhours.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://afterhours.io/favicon-16x16.png">
+
+    <link rel="canonical" href="https://afterhours.io/posts/2015-09-22-custom-elements/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://afterhours.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sane usage of Custom Elements"/>
+<meta name="twitter:description" content="An example on moving from jQuery plugins into Web Components, minus the hype"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://afterhours.io/images/headshot.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Lucas Mazza</a></h3>
+            <div class="description">
+                <p>Software Engineer, coffee enthusiast, absent blogger</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://twitter.com/lucasmazza" rel="me" aria-label="Twitter">
+                    <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/lucasmazza" rel="me" aria-label="GitHub">
+                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/lucasmazza" rel="me" aria-label="instagram">
+                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:lucasmazza@hey.com" rel="me" aria-label="e-mail">
+                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Lucas Mazza 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/posts/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/talks/"
+                        
+                   title="">Presentations</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+            
+            <li><a 
+                   href="https://afterhours.io/htmlcss-exemplos"
+                        
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        
+                   title="">Livro HTML5 e CSS 3 (pt-BR)</a></li>
+        
+            
+            <li><a 
+                   href="https://www.notion.so/Receitas-79a5a48a2350465dad3c57ba866f95d4"
+                        
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        
+                   title="">Receitas (pt-BR)</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Sane usage of Custom Elements</h3>
+                
+            </div>
+
+            <p>Web Components have been an controversial subject that surfaced in the Front end
+world over the last years that I&rsquo;m still pretty skeptical about its usage on
+existing and greenfield projects due the lack of good examples on how they
+can be rolled out to production, but I believe there is a way to get started with them
+without buying in all the hype.</p>
+<p>The whole <a href="https://github.com/w3c/webcomponents">Web Components spec</a> holds four
+different standards, but the <a href="http://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a>
+has some interesting features that can be useful to a lot of common tasks
+from regular projects.</p>
+<h2 id="the-life-of-a-javascript-plugin">The life of a JavaScript plugin</h2>
+<p>I&rsquo;m currently using <code>data-*</code> attributes to annotate DOM elements that should
+receive event handlers through <code>delegate</code> binds or be accessed directly
+to add the behavior our JavaScript wants when we can&rsquo;t simply
+delegate the event handlers through the document element.</p>
+<p>Let&rsquo;s say we want to toggle the <code>disabled</code> attribute of <code>button</code> elements based
+on the validation status of inputs placed inside the same <code>form</code> as the <code>button</code>
+element.</p>
+<p>A trivial implementation could be as simple as the following:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000;font-weight:bold">function</span> bindDisabledButton() {
+  $(<span style="color:#d14">&#39;[data-disabled-button]&#39;</span>).each(<span style="color:#000;font-weight:bold">function</span>() {
+    <span style="color:#000;font-weight:bold">let</span> button <span style="color:#000;font-weight:bold">=</span> $(<span style="color:#000;font-weight:bold">this</span>),
+        form <span style="color:#000;font-weight:bold">=</span> button.parents(<span style="color:#d14">&#39;form&#39;</span>),
+        input <span style="color:#000;font-weight:bold">=</span> form.find(<span style="color:#d14">&#39;input:not(:hidden), select&#39;</span>);
+
+    <span style="color:#000;font-weight:bold">function</span> updateButton() {
+      button.prop(<span style="color:#d14">&#39;disabled&#39;</span>, <span style="color:#000;font-weight:bold">!</span>inputs.get().every(input =&gt; input.checkValidity());
+    }
+
+    inputs.on(<span style="color:#d14">&#39;keyup change&#39;</span>, updateButton);
+    updateButton();
+  });
+}
+
+$(bindDisabledButton);
+</code></pre></div><p><em>We could <code>delegate</code> a <code>change</code> event on all inputs with validation and traverse
+the DOM to grab their parent <code>form</code>, sibling inputs and <code>button</code>, but let&rsquo;s assume
+the given code as the first implementation of this for this post.</em></p>
+<p>The code would Probably Work™, and could be refactored to use different abstractions,
+be executed only when there are elements in the page that haven&rsquo;t been selected
+before and whatnot, but the most annoying part about this kind of implementation
+(which is similar to 67.45% of JavaScript libraries and jQuery plugins we find
+in the interwebs) is the fact that we manually initialize these plugins and components
+by ourselves, and we have been doing this for a long time without worrying too
+much about this.</p>
+<p>The manual initialization isn&rsquo;t an issue with plain HTML that is fetched and
+rendered in the browser, but it can become a huge pain in the ass when we sprinkle
+more and more JavaScript on it and do things like Turbolinks/Pjax transitions or
+plain DOM updates through XHR requests or client side logic: since we are responsible
+for initialize this element, we must remember this every time the DOM changes.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">$(<span style="color:#0086b3">document</span>).on(<span style="color:#d14">&#39;ready page:load pjax:complete omg:wtf:bbq&#39;</span>, bindDisabledButton);
+</code></pre></div><p>This can easily escalate into more code to manually handle the life and death of
+our enhanced elements - we need to care about when they need to be created in
+our application and sometimes even when they need to be removed, as we might need to
+cleanup event handlers or related elements that aren&rsquo;t properly isolated with the
+node that will be removed from the page.</p>
+<h2 id="if-you-want-custom-elements-then-you-should-probably-try-writing-custom-elements">If you want custom elements, then you should probably try writing Custom Elements.</h2>
+<p>The first thing that got my attention when going through the Custom Elements spec was
+the <a href="http://w3c.github.io/webcomponents/spec/custom/#types-of-callbacks">lifecycle callbacks</a>
+that are available for developers to implement on their elements: we know when
+the element is added or removed from the DOM and when its attributes are changed
+by outside collaborators, and those callbacks can be extremely handy for pushing
+all this lifecycle logic that can leak through our applications into self contained
+elements.</p>
+<p>For instance, this is how the same <code>[data-disabled-button]</code> plugin can be
+re-implemented as a Custom Element:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#998;font-style:italic">// app/assets/javascripts/elements/disabled-button.es6
+</span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> slice <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">Array</span>.prototype.slice;
+
+<span style="color:#998;font-style:italic">// Public: Custom `button` element that is enabled and disabled based on the
+</span><span style="color:#998;font-style:italic">// validity state of the inputs inside the same &#39;form&#39; element as the button.
+</span><span style="color:#998;font-style:italic">//
+</span><span style="color:#998;font-style:italic">// Example
+</span><span style="color:#998;font-style:italic">//
+</span><span style="color:#998;font-style:italic">//  &lt;form&gt;
+</span><span style="color:#998;font-style:italic">//    &lt;input name=&#39;name&#39; required /&gt;
+</span><span style="color:#998;font-style:italic">//    &lt;button is=&#39;disabled-button&#39;&gt;Click me after you fill in the input&lt;/button&gt;
+</span><span style="color:#998;font-style:italic">//  &lt;/form&gt;
+</span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> DisabledButton <span style="color:#000;font-weight:bold">=</span> {
+  attachedCallback() {
+    <span style="color:#000;font-weight:bold">this</span>._form <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">this</span>._findForm(<span style="color:#000;font-weight:bold">this</span>);
+    <span style="color:#000;font-weight:bold">this</span>._updateCallback <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">this</span>._update.bind(<span style="color:#000;font-weight:bold">this</span>);
+    <span style="color:#000;font-weight:bold">this</span>._form.addEventListener(<span style="color:#d14">&#39;keyup&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback, <span style="color:#000;font-weight:bold">false</span>);
+    <span style="color:#000;font-weight:bold">this</span>._form.addEventListener(<span style="color:#d14">&#39;change&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback, <span style="color:#000;font-weight:bold">false</span>);
+    <span style="color:#000;font-weight:bold">this</span>._updateCallback();
+  },
+
+  detachedCallback() {
+    <span style="color:#000;font-weight:bold">this</span>._form.removeEventListener(<span style="color:#d14">&#39;keyup&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback);
+    <span style="color:#000;font-weight:bold">this</span>._form.removeEventListener(<span style="color:#d14">&#39;change&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback);
+  },
+
+  _update() {
+    <span style="color:#000;font-weight:bold">let</span> inputs <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">this</span>._findInputs(<span style="color:#000;font-weight:bold">this</span>._form);
+
+    <span style="color:#000;font-weight:bold">if</span> (inputs.every(input =&gt; input.checkValidity())) {
+      <span style="color:#000;font-weight:bold">this</span>.removeAttribute(<span style="color:#d14">&#39;disabled&#39;</span>);
+    } <span style="color:#000;font-weight:bold">else</span> {
+      <span style="color:#000;font-weight:bold">this</span>.setAttribute(<span style="color:#d14">&#39;disabled&#39;</span>, <span style="color:#000;font-weight:bold">true</span>);
+    }
+  },
+
+  _findInputs(form) {
+    <span style="color:#000;font-weight:bold">let</span> inputs <span style="color:#000;font-weight:bold">=</span> slice.call(form.querySelectorAll(<span style="color:#d14">&#39;input, select&#39;</span>), <span style="color:#099">0</span>);
+
+    <span style="color:#000;font-weight:bold">return</span> inputs.filter(input =&gt; input.type <span style="color:#000;font-weight:bold">!==</span> <span style="color:#d14">&#39;hidden&#39;</span>);
+  },
+
+  _findForm(element) {
+    <span style="color:#000;font-weight:bold">if</span> (element.nodeName <span style="color:#000;font-weight:bold">===</span> <span style="color:#d14">&#39;FORM&#39;</span>) {
+      <span style="color:#000;font-weight:bold">return</span> element;
+    } <span style="color:#000;font-weight:bold">else</span> {
+      <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">this</span>._findForm(element.parentElement);
+    }
+  }
+};
+
+<span style="color:#000;font-weight:bold">const</span> DisabledButtonPrototype <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">Object</span>.create(HTMLButtonElement.prototype);
+<span style="color:#0086b3">Object</span>.keys(DisabledButton).forEach(prop =&gt; {
+  DisabledButtonPrototype[prop] <span style="color:#000;font-weight:bold">=</span> DisabledButton[prop];
+});
+
+<span style="color:#0086b3">window</span>.DisabledButtonElement <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.registerElement(<span style="color:#d14">&#39;disabled-button&#39;</span>, {
+  prototype<span style="color:#000;font-weight:bold">:</span> DisabledButtonPrototype,
+  <span style="color:#d14">&#39;extends&#39;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;button&#39;</span>
+});
+</code></pre></div><p>Now, every time the browser adds a <code>disabled-button</code> element or a <code>button</code> with
+<code>is='disabled-button'</code>, it will be responsible for adding
+the necessary behavior to our button to be disabled when its parent form isn&rsquo;t
+valid or not, regardless of how the element got there in the first place - a
+from an page transition done through ajax or a script executed in the browser&rsquo;s
+console that appended an element to the page.</p>
+<p>In order to just enhance existing elements rather than go full JSF on my markup,
+I&rsquo;m sticking with <a href="http://w3c.github.io/webcomponents/spec/custom/#type-extension-example">type extensions</a> -
+the <code>is=&quot;disabled-button&quot;</code> instead of having a <code>&lt;disabled-button&gt;&lt;/disabled-button&gt;</code> tag
+in the markup - rather than implementing custom tags, avoiding <code>template</code> elements,
+Shadow DOM and HTML imports in order to keep my markup as simple as it can be with
+the benefits of better abstractions on the JavaScript code.</p>
+<p>In the end, the required markup change is to replace any <code>data-*</code> attribute that
+is used to hook the JavaScript code with a matching <code>is=&quot;component-name&quot;</code> for
+an equivalent Custom Element implementation.</p>
+<h2 id="similar-use-cases">Similar use cases</h2>
+<p>Besides our exceptional <code>button</code> that its a bit more clever than other plain buttons,
+there are several patterns that I can think of that can benefit from a Custom Element
+implementation that I&rsquo;ve encountered in projects in the past and might experiment
+by implementing them as type extensions in the future:</p>
+<ul>
+<li>alert messages rendered using Rails <code>flash.notice</code> and <code>flash.alert</code> that should
+be removed from the interface after a short delay: a <code>setTimeout</code> can be enqueued
+right after the element is attached for it to be removed.</li>
+<li>Bootstrap <a href="http://getbootstrap.com/javascript/#tooltips">Tooltips</a> or <a href="http://getbootstrap.com/javascript/#popovers">Popovers</a>,
+plugins that need to initialized manually, and you can have a shortcut for that
+by hooking it through a Custom Element. Same thing could be done to <a href="https://harvesthq.github.io/chosen/">Chosen</a>
+or any other <code>select</code> replacement plugin you might need to use.</li>
+<li>Elements that should change based on events or the state of other related elements,
+like our <code>disabled-button</code> example.</li>
+<li>Probably any other widget you might have to use.</li>
+</ul>
+<p>Some common use cases that already have been implemented, GitHub&rsquo;s <a href="https://github.com/github/time-elements"><code>time-elements</code></a>
+and <a href="https://github.com/github/include-fragment-element"><code>include-fragment-element</code></a> are
+the first ones that come to mind.</p>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

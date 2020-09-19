@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Lucas Mazza | 3 features from Rails 4.1 that I&#39;m excited about </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Software Engineer, coffee enthusiast, absent blogger">
+    
+    <link rel="stylesheet"
+          href="https://afterhours.io/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
+          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
+          crossorigin="anonymous"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://afterhours.io/css/overrides.bd79f32609bb701f0b5ec583c078889436f3d2ebce0b80eca8602417869948ae.css"
+          integrity="sha256-vXnzJgm7cB8LXsWDwHiIlDbz0uvOC4DsqGAkF4aZSK4="
+          crossorigin="anonymous"
+          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+    <link rel="shortcut icon" href="https://afterhours.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://afterhours.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://afterhours.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://afterhours.io/favicon-16x16.png">
+
+    <link rel="canonical" href="https://afterhours.io/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://afterhours.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="3 features from Rails 4.1 that I&#39;m excited about"/>
+<meta name="twitter:description" content="A quick rundown over some Rails 4.1 features"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://afterhours.io/images/headshot.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Lucas Mazza</a></h3>
+            <div class="description">
+                <p>Software Engineer, coffee enthusiast, absent blogger</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://twitter.com/lucasmazza" rel="me" aria-label="Twitter">
+                    <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/lucasmazza" rel="me" aria-label="GitHub">
+                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/lucasmazza" rel="me" aria-label="instagram">
+                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:lucasmazza@hey.com" rel="me" aria-label="e-mail">
+                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Lucas Mazza 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/posts/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/talks/"
+                        
+                   title="">Presentations</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+            
+            <li><a 
+                   href="https://afterhours.io/htmlcss-exemplos"
+                        
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        
+                   title="">Livro HTML5 e CSS 3 (pt-BR)</a></li>
+        
+            
+            <li><a 
+                   href="https://www.notion.so/Receitas-79a5a48a2350465dad3c57ba866f95d4"
+                        
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        
+                   title="">Receitas (pt-BR)</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>3 features from Rails 4.1 that I&#39;m excited about</h3>
+                
+            </div>
+
+            <p>Rails 4.1 was just released this week and I already had a great experience trying out the release candidates on my latest project, so I decided to write a bit about my favorites features on this release and some things I have learned by using them so far.</p>
+<h3 id="1-secretsyml">1) secrets.yml</h3>
+<p>Placing your configuration in a YAML file isn&rsquo;t exactly a revolutionary feature, but the usage of the <code>config/secrets.yml</code> file that comes with Rails 4.1 holds a more important idea: the promise of a default approach for environment aware custom configuration on Rails applications. Over the years the community created several ways to manage such configuration so every app out there deals with this differently, but now we can use the Rails default as a standard just like we do with the app folder or the routing patterns, taking the configuration madness outside the list of things to worry about when working with Rails. So instead of dealing with multiple YAML files or constants left out inside initializers, we can go with the <code>secrets.yml</code> as the default for our apps.</p>
+<p>Remember that you can place any kind of configuration - not just secrets like tokens or passwords - that need to be handled differently through your application environments, like API Endpoints or S3 bucket names. And for any gem maintainers out there, you can make your gem read these settings from the <code>secrets.yml</code> automagically through an <a href="https://github.com/plataformatec/devise/blob/6027787930224b7c5306a15a81c26e9a7c21fe89/lib/devise/rails.rb#L32-L45">initializer</a> block and maybe remove a configuration step from the gem setup. Adding this to Devise on <a href="https://github.com/plataformatec/devise/pull/2835">this pull request</a> was easier than I expected and I suggest you to try it out on your gems as well.</p>
+<p>If you want to try to organize your configuration through the <code>secrets.yml</code> without having to update to Rails 4.1 right now, Andrew White backported this feature on the <a href="https://github.com/pixeltrix/rails-secrets">rails-secrets</a> gem for Rails 4.0 apps.</p>
+<p>So, if you are dealing with some configuration mess or aren&rsquo;t using something like <a href="https://github.com/bkeepers/dotenv">dotenv</a> for your application, I strongly suggest that you try to migrate your config to use the <code>secrets.yml</code> file and see how it goes for your application.</p>
+<h3 id="2-action-pack-variants">2) Action Pack Variants</h3>
+<p>Variants are proving to be a great solution to render device specific views when mixed with any device detection solution like the <a href="https://github.com/josh/useragent">useragent</a> or <a href="https://github.com/fnando/browser">browser</a> gems, which you integrate quickly with just a <code>before_action</code> block:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ApplicationController</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">ActionController</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Base</span>
+  before_action <span style="color:#990073">:set_variant</span>
+
+  <span style="color:#000;font-weight:bold">private</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">set_variant</span>
+    <span style="color:#000;font-weight:bold">if</span> browser<span style="color:#000;font-weight:bold">.</span>tablet?
+      request<span style="color:#000;font-weight:bold">.</span>variant <span style="color:#000;font-weight:bold">=</span> <span style="color:#990073">:tablet</span>
+    <span style="color:#000;font-weight:bold">elsif</span> browser<span style="color:#000;font-weight:bold">.</span>mobile?
+      request<span style="color:#000;font-weight:bold">.</span>variant <span style="color:#000;font-weight:bold">=</span> <span style="color:#990073">:mobile</span>
+    <span style="color:#000;font-weight:bold">else</span>
+      request<span style="color:#000;font-weight:bold">.</span>variant <span style="color:#000;font-weight:bold">=</span> <span style="color:#990073">:desktop</span>
+    <span style="color:#000;font-weight:bold">end</span>
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+</code></pre></div><p>Even though the main examples are dealing with User Agent sniffing, this feature can be used in any context where you want to have more control of which views are rendered by your application, like:</p>
+<ul>
+<li>A/B Testing different partials based on the user cookies.</li>
+<li>API versioning for your Jbuilder templates.</li>
+<li>Maintaining current and redesigned views for the same controller.</li>
+<li>Authorization aware views, like <code>users/index.html+admin.erb</code> or <code>products/show.html+guest.erb</code>.</li>
+</ul>
+<p>In the end, Variants are just a way for you to have more control over how your views will be used by the app, helping you to remove boilerplate logic from your code and letting the framework handle it through a more elegant solution.</p>
+<h3 id="3-the-improved-cookies-serializer">3) The improved cookies serializer</h3>
+<p>The changes on how Rails serializes cookies are a great improvement when it comes to security and stability of web apps. Before this, any object placed in the cookies Hash would be serialized (and deserialized) through <code>Marshal.dump</code> and <code>Marshal.load</code>, which could possibly lead to remote code execution if an attacker got hold on your application secret.</p>
+<p>Now this serializer is configurable through the <code>config.action_dispatch.cookies_serializer</code> configuration option, and new apps will ship with a smarter default: a JSON serializer that won&rsquo;t recreate complex objects besides Strings, Integers and other JSON data types. And for a smooth upgrade, you can use the <code>:hybrid</code> serializer that will convert your existing marshalled cookies into JSON cookies, so this upgrade can be transparent for your application users.</p>
+<p>This upgrade highlights a possible bad practice in our applications where we end up placing more complex objects in the session that can&rsquo;t be completely restored by the JSON serializer, when we should be using more simple structures for the data stored in cookies. Thanks to a related issue reported on the <a href="https://github.com/plataformatec/devise">Devise</a> issue tracker we could simplify the gem code a bit, so instead of serializing <code>Time</code> objects we could <a href="https://github.com/plataformatec/devise/pull/2954">work with numbers</a>.</p>
+<p>So, when updating your application to use the <code>:hybrid</code> serializer, don&rsquo;t forget to do a double check of whatever kind of data the app stores in your users cookies and look for possible backwards incompatibility. And if you want to take a closer look on how this was implemented, be sure to check the related issues and pull requests on the Rails repo: <a href="https://github.com/rails/rails/issues/12881">#12881</a>, <a href="https://github.com/rails/rails/pull/13692">#13692</a> and <a href="https://github.com/rails/rails/pull/13945">#13945</a>.</p>
+<h3 id="keeping-up-to-date-with-the-latest-rails-changes">Keeping up to date with the latest Rails changes</h3>
+<p>Following the activity on the Rails repository over GitHub helped a lot to understand better these features and the rationale behind their implementations, but going through all the commits and discussions on Issues and Pull Requests would demand a lot of your time. If you want some of the inside scoop but don&rsquo;t have that much time to go through the Rails activity over the week, <a href="https://twitter.com/chancancode">Godfrey Chan</a> has put up a weekly digest about Rails named <a href="http://rails-weekly.goodbits.io/">This Week in Rails</a>. I suggest that you subscribe to the list and even check some of the previous editions on the archive page.</p>
+<h3 id="try-it-yourself">Try it yourself!</h3>
+<p>Take some time and upgrade one of your Rails 4 apps and try out some of the new features! I bet that some of them will help you improve your codebase or make your coworkers life a bit easier, and we are eager to hear from your experience with the 4.1 release.</p>
+<blockquote>
+<p>This post was originally published at
+<a href="http://blog.plataformatec.com.br/2014/04/3-features-from-rails-4-1-that-im-excited-about/">http://blog.plataformatec.com.br/2014/04/3-features-from-rails-4-1-that-im-excited-about/</a></p>
+</blockquote>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Lucas Mazza | Nobody told me Minitest was this fun </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Software Engineer, coffee enthusiast, absent blogger">
+    
+    <link rel="stylesheet"
+          href="https://afterhours.io/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
+          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
+          crossorigin="anonymous"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://afterhours.io/css/overrides.bd79f32609bb701f0b5ec583c078889436f3d2ebce0b80eca8602417869948ae.css"
+          integrity="sha256-vXnzJgm7cB8LXsWDwHiIlDbz0uvOC4DsqGAkF4aZSK4="
+          crossorigin="anonymous"
+          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+    <link rel="shortcut icon" href="https://afterhours.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://afterhours.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://afterhours.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://afterhours.io/favicon-16x16.png">
+
+    <link rel="canonical" href="https://afterhours.io/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://afterhours.io/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
+            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
+            crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nobody told me Minitest was this fun"/>
+<meta name="twitter:description" content="Where the author kinda regrets getting too attached to RSpec"/>
+
+</head>
+<body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://afterhours.io/images/headshot.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Lucas Mazza</a></h3>
+            <div class="description">
+                <p>Software Engineer, coffee enthusiast, absent blogger</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://twitter.com/lucasmazza" rel="me" aria-label="Twitter">
+                    <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/lucasmazza" rel="me" aria-label="GitHub">
+                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/lucasmazza" rel="me" aria-label="instagram">
+                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:lucasmazza@hey.com" rel="me" aria-label="e-mail">
+                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Lucas Mazza 2020 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/posts/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/talks/"
+                        
+                   title="">Presentations</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+            
+            <li><a 
+                   href="https://afterhours.io/htmlcss-exemplos"
+                        
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        
+                   title="">Livro HTML5 e CSS 3 (pt-BR)</a></li>
+        
+            
+            <li><a 
+                   href="https://www.notion.so/Receitas-79a5a48a2350465dad3c57ba866f95d4"
+                        
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        
+                   title="">Receitas (pt-BR)</a></li>
+        
+        
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post animated fadeInDown">
+        <div class="post-content">
+
+            <div class="post-title">
+                <h3>Nobody told me Minitest was this fun</h3>
+                
+            </div>
+
+            <p>Ever since I started working with Ruby I have been using RSpec to test my apps and gems without giving minitest much thought. Recently I started a new non-Rails project and decided to give Minitest a try just for the fun of it. Migrating from one tool to another was refreshingly fun due to the fact that that Minitest and RSpec aren&rsquo;t so different from each other - they both have the basic features that we need in a testing library to get things running, and if you are used to testing your code moving from one to the other might not be so scary as you might expect.</p>
+<h2 id="translating-testing-idioms">Translating testing idioms</h2>
+<p>One of the first things that I looked into was how some of common RSpec idioms should be implemented when using Minitest.</p>
+<p>The classic ones are fairly simple: the <code>before</code> and <code>after</code> lifecycle hooks should be equivalent as implementing the <code>setup</code> and <code>teardown</code> methods in your test class, and you have control over the inheritance chain by selecting when/where to call <code>super</code>. <code>let</code> and <code>subject</code> can be achieved with methods that use memoization to cache their values.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#998;font-style:italic"># A classic RSpec subject/before usage.</span>
+<span style="color:#0086b3">require</span> <span style="color:#d14">&#39;spec_helper&#39;</span>
+
+describe <span style="color:#008080">Post</span> <span style="color:#000;font-weight:bold">do</span>
+  subject(<span style="color:#990073">:post</span>) { <span style="color:#008080">Post</span><span style="color:#000;font-weight:bold">.</span>new }
+  before { post<span style="color:#000;font-weight:bold">.</span>publish! }
+<span style="color:#000;font-weight:bold">end</span>
+
+<span style="color:#998;font-style:italic"># The equivalent with Minitest &amp; Ruby.</span>
+<span style="color:#0086b3">require</span> <span style="color:#d14">&#39;test_helper&#39;</span>
+
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PostTest</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Test</span>
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">post</span>
+    <span style="color:#008080">@post</span> <span style="color:#000;font-weight:bold">||=</span> <span style="color:#008080">Post</span><span style="color:#000;font-weight:bold">.</span>new
+  <span style="color:#000;font-weight:bold">end</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">setup</span>
+    post<span style="color:#000;font-weight:bold">.</span>publish!
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+</code></pre></div><p>RSpec shared examples, where you can reuse a set of examples across your test suite, can be replicated by simply writing your tests in modules and depend on accessor methods to inject any objects your tests might depend on</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#998;font-style:italic"># What used to be a shared_examples &#39;Serialization&#39; can be a module...</span>
+<span style="color:#000;font-weight:bold">module</span> <span style="color:#555">SerializationTests</span>
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">serializer</span>
+    <span style="color:#000;font-weight:bold">raise</span> <span style="color:#008080">NotImplementedError</span>
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+
+<span style="color:#998;font-style:italic"># And your test cases can include that module to copy the tests</span>
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">JSONSerializationTest</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Test</span>
+  <span style="color:#000;font-weight:bold">include</span> <span style="color:#008080">SerializationTests</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">serializer</span>
+    <span style="color:#008080">JSON</span>
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">MarshalSerializationTest</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Test</span>
+  <span style="color:#000;font-weight:bold">include</span> <span style="color:#008080">SerializationTests</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">serializer</span>
+    <span style="color:#008080">Marshal</span>
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+</code></pre></div><p>Mocks and stubs, which are incredibly flexible when using RSpec, are available in Minitest without any third party gem:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PostTest</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Test</span>
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">test_notifies_on_publish</span>
+    notifier <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Mock</span><span style="color:#000;font-weight:bold">.</span>new
+    notifier<span style="color:#000;font-weight:bold">.</span>expect <span style="color:#990073">:notify!</span>, <span style="color:#000;font-weight:bold">true</span>
+
+    post<span style="color:#000;font-weight:bold">.</span>publish!(<span style="color:#990073">notifier</span>: notifier)
+    notifier<span style="color:#000;font-weight:bold">.</span>verify
+  <span style="color:#000;font-weight:bold">end</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">test_does_not_notifies_on_republish</span>
+    notifier <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Mock</span><span style="color:#000;font-weight:bold">.</span>new
+
+    post<span style="color:#000;font-weight:bold">.</span>stub <span style="color:#990073">:published?</span>, <span style="color:#000;font-weight:bold">true</span> <span style="color:#000;font-weight:bold">do</span>
+      post<span style="color:#000;font-weight:bold">.</span>publish!(<span style="color:#990073">notifier</span>: notifier)
+      notifier<span style="color:#000;font-weight:bold">.</span>verify
+    <span style="color:#000;font-weight:bold">end</span>
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+</code></pre></div><p>If you want a different or more fluent API, you can use something like <a href="https://github.com/freerange/mocha"><code>mocha</code></a> to improve your mocks, or even bring RSpec API into the mix - with some manual setup you can pick the <a href="https://github.com/rspec/rspec-mocks"><code>rspec-mocks</code></a> gem and define your mocks and stubs just like when using the complete RSpec tooling:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#0086b3">require</span> <span style="color:#d14">&#39;rspec/mocks&#39;</span>
+
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PostTest</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Test</span>
+  <span style="color:#000;font-weight:bold">include</span> <span style="color:#000;font-weight:bold">::</span><span style="color:#008080">RSpec</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Mocks</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">ExampleMethods</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">before_setup</span>
+    <span style="color:#000;font-weight:bold">::</span><span style="color:#008080">RSpec</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Mocks</span><span style="color:#000;font-weight:bold">.</span>setup
+    <span style="color:#000;font-weight:bold">super</span>
+  <span style="color:#000;font-weight:bold">end</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">after_teardown</span>
+    <span style="color:#000;font-weight:bold">super</span>
+    <span style="color:#000;font-weight:bold">::</span><span style="color:#008080">RSpec</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Mocks</span><span style="color:#000;font-weight:bold">.</span>verify
+  <span style="color:#000;font-weight:bold">ensure</span>
+    <span style="color:#000;font-weight:bold">::</span><span style="color:#008080">RSpec</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Mocks</span><span style="color:#000;font-weight:bold">.</span>teardown
+  <span style="color:#000;font-weight:bold">end</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">test_notifies_on_publish</span>
+    notifier <span style="color:#000;font-weight:bold">=</span> double(<span style="color:#d14">&#39;A notifier&#39;</span>)
+    expect(notifier)<span style="color:#000;font-weight:bold">.</span>to receive(<span style="color:#990073">:notify!</span>)
+
+    post<span style="color:#000;font-weight:bold">.</span>publish!(<span style="color:#990073">notifier</span>: notifier)
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+</code></pre></div><h2 id="know-your-assertions">Know your assertions</h2>
+<p>One of my favorite parts of RSpec is how expressive the assertions can be - from the Ruby code that we have to write to the errors that the test runner will emit when something is broken. One might think that we can have something similar when working with Minitest, but that is not exactly true.</p>
+<p>Let&rsquo;s say we want to test a method like <code>Post#active?</code>. Using a dynamic matcher from RSpec like <code>expect(post).to be_active</code> will produce a very straightforward message when that assertion fails: <code>expected #&lt;Post: …&gt;.active? to return false, got true</code>.</p>
+<p>With Minitest, we might be tempted to write an assertion like <code>assert !post.active?</code>, but then the failure message wouldn&rsquo;t be much useful for us: <code>Failed assertion, no message given</code>. But fear not, because for something like this we have the <code>assert_predicate</code> and <code>refute_predicate</code> assertions, and they can produce very straightforward failure messages like <code>Expected #&lt;Post:…&gt; to not be active?.</code>, which clearly explains what went wrong with our tests.</p>
+<p>Besides the predicate assertions, we have a few other assertion methods that can useful instead of playing with the plain <code>assert</code> method: <code>assert_includes</code>, <code>assert_same</code>, <code>assert_operator</code> and so on - and every one of those has a <code>refute_</code> counterpart for negative assertions.</p>
+<p>It&rsquo;s always a matter of checking the documentation - The <a href="http://docs.seattlerb.org/minitest/Minitest/Assertions.html"><code>Minitest::Assertions</code> module</a> explains all the default assertions that you use with Minitest.</p>
+<p>And in the case where you want to write a new assertion, you can always mimic how the built-in assertions are written to write your own:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#000;font-weight:bold">module</span> <span style="color:#555">ActiveModelAssertions</span>
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">assert_valid</span>(model, msg <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">nil</span>)
+    msg <span style="color:#000;font-weight:bold">=</span> message(msg) { <span style="color:#d14">&#34;Expected </span><span style="color:#d14">#{</span>model<span style="color:#d14">}</span><span style="color:#d14"> to be valid, but got errors: </span><span style="color:#d14">#{</span>errors<span style="color:#d14">}</span><span style="color:#d14">.&#34;</span> }
+    valid <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>valid?
+    errors <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>errors<span style="color:#000;font-weight:bold">.</span>full_messages<span style="color:#000;font-weight:bold">.</span>join(<span style="color:#d14">&#39;, &#39;</span>)
+    assert valid, msg
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PostTest</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">Minitest</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">Test</span>
+  <span style="color:#000;font-weight:bold">include</span> <span style="color:#008080">ActiveModelAssertions</span>
+
+  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">test_post_validations</span>
+    post <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">Post</span><span style="color:#000;font-weight:bold">.</span>new(<span style="color:#990073">title</span>: <span style="color:#d14">&#39;The Post&#39;</span>)
+    assert_valid post
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+</code></pre></div><h2 id="active-support-goodies">Active Support goodies</h2>
+<p>If you want some extra sugar in your tests, you can bring some of extensions that Active Support has for Minitest that are available when working with Rails - a more declarative API, some extra assertions, time traveling and anything else that Rails might bring to the table.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#0086b3">require</span> <span style="color:#d14">&#39;active_support&#39;</span>
+<span style="color:#0086b3">require</span> <span style="color:#d14">&#39;active_support/test_case&#39;</span>
+<span style="color:#0086b3">require</span> <span style="color:#d14">&#39;minitest/autorun&#39;</span>
+
+<span style="color:#008080">ActiveSupport</span><span style="color:#000;font-weight:bold">.</span>test_order <span style="color:#000;font-weight:bold">=</span> <span style="color:#990073">:random</span>
+
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PostTest</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#008080">ActiveSupport</span><span style="color:#000;font-weight:bold">::</span><span style="color:#008080">TestCase</span>
+  <span style="color:#998;font-style:italic"># setup&#39; and teardown&#39; can be blocks,</span>
+  <span style="color:#998;font-style:italic"># like RSpec before&#39; and after&#39;.</span>
+  setup <span style="color:#000;font-weight:bold">do</span>
+    <span style="color:#008080">@post</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">Post</span><span style="color:#000;font-weight:bold">.</span>new
+  <span style="color:#000;font-weight:bold">end</span>
+
+  <span style="color:#998;font-style:italic"># &#39;test&#39; is a declarative way to define</span>
+  <span style="color:#998;font-style:italic"># test methods.</span>
+  <span style="color:#0086b3">test</span> <span style="color:#d14">&#39;deactivating a post&#39;</span> <span style="color:#000;font-weight:bold">do</span>
+    <span style="color:#008080">@post</span><span style="color:#000;font-weight:bold">.</span>deactivate!
+    refute_predicate <span style="color:#008080">@post</span>, <span style="color:#990073">:active?</span>
+  <span style="color:#000;font-weight:bold">end</span>
+<span style="color:#000;font-weight:bold">end</span>
+</code></pre></div><h2 id="tweaking-the-toolchain">Tweaking the toolchain</h2>
+<p>Minitest simplicity might not be so great when it comes to the default spec runner and reporter, which lack some of my favorite parts of RSpec - the verbose and colored output, the handful of command line flags or the report on failures that get the command to run a single failure test. But on the good side, even though Minitest does not ship with some of those features by default, there are a great number of gems that can help our test suite to be more verbose and friendly whenever we need to fix a failing test.</p>
+<p>For instance, with the <a href="https://rubygems.org/gems/minitest-reporters">minitest-reporters</a> gem you can bring some color to your tests output or make it compatible with RubyMine and TeamCity. You can use reporters that are compatible with JUnit or RubyMine if that&rsquo;s your thing. You can use <a href="https://rubygems.org/gems/minitest-fail-fast">minitest-fail-fast</a> to bring the <code>--fail-fast</code> flag from RSpec and exit your test suite as soon as a test fails. Or you can track down object allocations in your tests using <a href="https://rubygems.org/gems/minitest-gcstats">minitest-gcstats</a>.</p>
+<p>If any of those gems aren&rsquo;t exactly the setup you want it, you can always mix it up a bit and <a href="https://rubygems.org/gems/minitest-utils">roll your own gem</a> with reporters, helpers and improvements that are suitable for the way you write your tests.</p>
+<p>Thanks to this extensibility, Rails 5 will bring some improvements to how you run the tests in your app to improve the overall testing experience with Rails (be sure to check <a href="https://github.com/rails/rails/pull/19216">this Pull Request</a> and the improvements from other Pull Requests).</p>
+<blockquote>
+<p>This post was originally published at
+<a href="http://blog.plataformatec.com.br/2015/05/nobody-told-me-minitest-was-this-fun/">http://blog.plataformatec.com.br/2015/05/nobody-told-me-minitest-was-this-fun/</a></p>
+</blockquote>
+
+        </div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
+        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
+        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://afterhours.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
