@@ -26,7 +26,7 @@ gaming sessions.
   <a href='https://podium.com'>Podium</a>
 </h3>
 
-#### Senior Software Engineer, since 2020 - <small>São Paulo, Brazil / Remote</small>
+#### Senior Software Engineer, 03/2020 to 10/2020 - <small>São Paulo, Brazil / Remote</small>
 
 At Podium I'm part of the Reviews team that is responsible for the maintenance of
 the backend services that powers our Reviews product.
