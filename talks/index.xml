@@ -6,11 +6,7 @@
     <description>Recent content in Talks on Lucas Mazza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://afterhours.io/talks/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://afterhours.io/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ecto sem SQL</title>
       <link>https://afterhours.io/talks/ecto-sem-sql/</link>

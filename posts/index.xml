@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Lucas Mazza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://afterhours.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://afterhours.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Field Guide</title>
       <link>https://afterhours.io/posts/2018-02-20-git-field-guide/</link>
