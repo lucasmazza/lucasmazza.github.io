@@ -22,6 +22,13 @@ gaming sessions.
 ## Experience
 
 <h3 class='heading-with-icon'>
+  <img src='/images/companies/remote.png' class='company-icon'>
+  <a href='https://remote.com'>Remote</a>
+</h3>
+
+#### Senior Software Engineer, 11/2020 - Present - <small>São Paulo, Brazil / Remote</small>
+
+<h3 class='heading-with-icon'>
   <img src='/images/companies/podium.jpg' class='company-icon'>
   <a href='https://podium.com'>Podium</a>
 </h3>
