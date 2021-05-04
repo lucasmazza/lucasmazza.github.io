@@ -3,22 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://afterhours.io/posts/2021-03-30-feature-toggles/</loc>
-    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <loc>https://afterhours.io/talks/ecto-sem-sql/</loc>
+    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://afterhours.io/</loc>
-    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://afterhours.io/posts/</loc>
-    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://afterhours.io/talks/ecto-sem-sql/</loc>
     <lastmod>2019-07-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -39,6 +29,11 @@
   
   <url>
     <loc>https://afterhours.io/posts/2018-02-20-git-field-guide/</loc>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://afterhours.io/posts/</loc>
     <lastmod>2018-02-20T00:00:00+00:00</lastmod>
   </url>
   

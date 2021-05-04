@@ -6,19 +6,10 @@
     <description>Recent content in Posts on Lucas Mazza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://afterhours.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Feature Toggles</title>
-      <link>https://afterhours.io/posts/2021-03-30-feature-toggles/</link>
-      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://afterhours.io/posts/2021-03-30-feature-toggles/</guid>
-      <description>The history behind feature toggles, how to use them on Ruby and Elixir projects and maintenance considerations when adopting this technique on your application.</description>
-    </item>
     
     <item>
       <title>Git Field Guide</title>
