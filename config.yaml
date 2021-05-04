@@ -31,7 +31,7 @@ params:
       url: 'https://www.instagram.com/lucasmazza'
     - icon: fa-envelope
       title: e-mail
-      url: 'mailto:lucasmazza@hey.com'
+      url: 'mailto:email@lucasmazza.website'
 
 permalinks:
   talks: '/talks/:slug'
