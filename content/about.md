@@ -28,6 +28,10 @@ gaming sessions.
 
 #### Senior Software Engineer, 11/2020 - Present - <small>São Paulo, Brazil / Remote</small>
 
+I'm helping Remote rapid growth through working on new features from different product areas,
+recruiting and onboarding new engineers and advocating for developer experience and platform
+stability as we expand into multiple countries and business verticals.
+
 <h3 class='heading-with-icon'>
   <img src='/images/companies/podium.jpg' class='company-icon'>
   <a href='https://podium.com'>Podium</a>
