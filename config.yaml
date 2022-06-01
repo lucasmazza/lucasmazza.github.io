@@ -15,7 +15,7 @@ params:
   title: "Lucas Mazza"
   author: "Lucas Mazza"
   description: "Software Engineer, coffee enthusiast, absent blogger"
-  profilePicture: "images/headshot.jpg"
+  profilePicture: "images/lucas.jpg"
   customCss:
     - css/overrides.css
 
