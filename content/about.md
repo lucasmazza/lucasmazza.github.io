@@ -17,7 +17,7 @@ gaming sessions.
 * [Twitter](https://twitter.com/lucasmazza): Occasional tweets, pt-BR or en-US.
 * [Instagram](https://instagram.com/lucasmazza): mostly food pictures.
 * [Presentations](/presentations/): Collection of slide decks.
-* [E-mail](mailto:lucasmazza@hey.com): for everything else.
+* [E-mail](mailto:email@lucasmazza.website): for everything else.
 
 ## Experience
 
@@ -30,7 +30,9 @@ gaming sessions.
 
 I'm helping Remote rapid growth through working on new features from different product areas,
 recruiting and onboarding new engineers and advocating for developer experience and platform
-stability as we expand into multiple countries and business verticals.
+stability as we expand into multiple countries and business verticals. 
+
+I worked on product areas like in app and email notification foundations, built support for 2FA authentication for users and rolled out SSO capabilities for customers and internal users of our platform.
 
 <h3 class='heading-with-icon'>
   <img src='/images/companies/podium.jpg' class='company-icon'>
