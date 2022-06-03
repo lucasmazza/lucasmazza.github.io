@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lucas Mazza</title>
-    <link>https://afterhours.io/</link>
+    <link>https://lucasmazza.website/</link>
     <description>Recent content on Lucas Mazza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://afterhours.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lucasmazza.website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ecto sem SQL</title>
-      <link>https://afterhours.io/talks/ecto-sem-sql/</link>
+      <link>https://lucasmazza.website/talks/ecto-sem-sql/</link>
       <pubDate>Sat, 06 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/ecto-sem-sql/</guid>
+      <guid>https://lucasmazza.website/talks/ecto-sem-sql/</guid>
       <description>Elug SP - 07/2019
  Um dos objetivos do design do ecto é ser um &amp;ldquo;toolkit para mapeamento de dados&amp;rdquo; independente do uso de &amp;gt; um banco de dados por de trás dos panos, e nesta palestra vamos ver alguns casos de uso de schemas e &amp;gt; changesets em situações diferentes de aplicações onde um banco de dados não está presente mas o ecto &amp;gt; nos ajuda a resolver problemas no dia a dia.</description>
     </item>
     
     <item>
       <title>Feature Toggles</title>
-      <link>https://afterhours.io/talks/feature-toggles/</link>
+      <link>https://lucasmazza.website/talks/feature-toggles/</link>
       <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/feature-toggles/</guid>
+      <guid>https://lucasmazza.website/talks/feature-toggles/</guid>
       <description>Guru SP - 08/2018, Elug SP - 08/2018
  Feature toggles são uma técnica muito versátil para ajudar o trabalho de disponibilizar novas funcionalidades em produção sem quebrar a experiência de clientes e fazer entregas graduais, mas acabamos aprendendo sobre toggles de uma forma superficial no dia a dia.
 Vamos ver um pouco do passado e presente do uso de features toggles, a sua facilidade de uso graças a ferramentas open source e considerações a serem feitas sobre como e quando usar toggles na sua aplicação</description>
@@ -34,49 +34,49 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
     
     <item>
       <title>Testes automatizados e a prática antes da teoria</title>
-      <link>https://afterhours.io/talks/testes/</link>
+      <link>https://lucasmazza.website/talks/testes/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/testes/</guid>
+      <guid>https://lucasmazza.website/talks/testes/</guid>
       <description>Guru SP - 02/2018
  Escrever testes automáticos é uma prática bem estabelecida na comunidade Ruby, mas o quão bons são os testes que escrevemos? Na correria do dia a dia, estamos testando de forma efetiva ou só escrevendo mais código? Nesta palestra vamos ver alguns vícios e más práticas tradicionais de projetos Ruby, como podemos evitá-los e escrever testes melhores, e quais mudanças de pensando e práticas podemos adotar para aprimorar a nossa escrita de testes de software.</description>
     </item>
     
     <item>
       <title>Git Field Guide</title>
-      <link>https://afterhours.io/posts/2018-02-20-git-field-guide/</link>
+      <link>https://lucasmazza.website/posts/2018-02-20-git-field-guide/</link>
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2018-02-20-git-field-guide/</guid>
+      <guid>https://lucasmazza.website/posts/2018-02-20-git-field-guide/</guid>
       <description>A rundown on how I configure, use and see git as a day to day tool</description>
     </item>
     
     <item>
       <title>Circuit Breakers em Ruby</title>
-      <link>https://afterhours.io/talks/circuit-breakers/</link>
+      <link>https://lucasmazza.website/talks/circuit-breakers/</link>
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/circuit-breakers/</guid>
+      <guid>https://lucasmazza.website/talks/circuit-breakers/</guid>
       <description>Guru SP - 11/2016
  </description>
     </item>
     
     <item>
       <title>The Zen and Art of Refactoring</title>
-      <link>https://afterhours.io/talks/zen-and-art-of-refactoring/</link>
+      <link>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</link>
       <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/zen-and-art-of-refactoring/</guid>
+      <guid>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</guid>
       <description>RubyConf Brazil 2016
  Refactoring is often seen as a process where we make bad code better by waving our wands and casting our secret spells while facing our editors, which usually happens when things are on fire and the pressure is on. Changing software should be easier and not scary, and one of the first steps to do it is not to try to write future-proof code, but we can adopt different steps to think about the changes we want to do and how we can do them.</description>
     </item>
     
     <item>
       <title>Minitest: voltando ao básico sobre testes</title>
-      <link>https://afterhours.io/talks/minitest/</link>
+      <link>https://lucasmazza.website/talks/minitest/</link>
       <pubDate>Sat, 23 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/minitest/</guid>
+      <guid>https://lucasmazza.website/talks/minitest/</guid>
       <description>Guru SP - 07/2016
  Minitest nasceu como uma alternativa ao test/unit do Ruby 1.8 e se tornou um framework de testes extremamente robusto e ao mesmo tempo simples, e está disponível em qualquer instalação de Ruby hoje em dia, para todos escrevem testes sem muita burocracia.
   </description>
@@ -84,37 +84,37 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
     
     <item>
       <title>Experimenting with explicit contracts with Ruby</title>
-      <link>https://afterhours.io/posts/2016-02-29-experimenting-with-explicit-contracts-with-ruby/</link>
+      <link>https://lucasmazza.website/posts/2016-02-29-experimenting-with-explicit-contracts-with-ruby/</link>
       <pubDate>Mon, 29 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2016-02-29-experimenting-with-explicit-contracts-with-ruby/</guid>
+      <guid>https://lucasmazza.website/posts/2016-02-29-experimenting-with-explicit-contracts-with-ruby/</guid>
       <description>Bringing design ideas from Elixir projects into Ruby</description>
     </item>
     
     <item>
       <title>Books from 2015</title>
-      <link>https://afterhours.io/posts/2015-12-31-books-from-2015/</link>
+      <link>https://lucasmazza.website/posts/2015-12-31-books-from-2015/</link>
       <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2015-12-31-books-from-2015/</guid>
+      <guid>https://lucasmazza.website/posts/2015-12-31-books-from-2015/</guid>
       <description>Non technical reads from 2015</description>
     </item>
     
     <item>
       <title>Software is a multiverse</title>
-      <link>https://afterhours.io/posts/2015-11-24-multiverse/</link>
+      <link>https://lucasmazza.website/posts/2015-11-24-multiverse/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2015-11-24-multiverse/</guid>
+      <guid>https://lucasmazza.website/posts/2015-11-24-multiverse/</guid>
       <description>Or why we still need to say &amp;ldquo;there is no Silver Bullet&amp;rdquo;</description>
     </item>
     
     <item>
       <title>10 coisas que eu gostaria de ter aprendido mais cedo</title>
-      <link>https://afterhours.io/talks/10-coisas/</link>
+      <link>https://lucasmazza.website/talks/10-coisas/</link>
       <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/10-coisas/</guid>
+      <guid>https://lucasmazza.website/talks/10-coisas/</guid>
       <description>Front in Manaus 2015
  Amigos desenvolvedores, o que vocês gostariam de ter aprendido no passado quando começaram com desenvolvimento de software que vocês sabem agora? Abram seus corações. Nessa apresentação vou mostrar um compilado de aprendizado que eu e meus colegas de profissão compartilhamos durante a carreira.
   </description>
@@ -122,83 +122,83 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
     
     <item>
       <title>Revising talks on code and craft</title>
-      <link>https://afterhours.io/posts/2015-10-01-revising-talks/</link>
+      <link>https://lucasmazza.website/posts/2015-10-01-revising-talks/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2015-10-01-revising-talks/</guid>
+      <guid>https://lucasmazza.website/posts/2015-10-01-revising-talks/</guid>
       <description>Recommendations on technical tasks from recent Ruby Conferences</description>
     </item>
     
     <item>
       <title>Sane usage of Custom Elements</title>
-      <link>https://afterhours.io/posts/2015-09-22-custom-elements/</link>
+      <link>https://lucasmazza.website/posts/2015-09-22-custom-elements/</link>
       <pubDate>Tue, 22 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2015-09-22-custom-elements/</guid>
+      <guid>https://lucasmazza.website/posts/2015-09-22-custom-elements/</guid>
       <description>An example on moving from jQuery plugins into Web Components, minus the hype</description>
     </item>
     
     <item>
       <title>gems, executáveis e configurações</title>
-      <link>https://afterhours.io/talks/tools/</link>
+      <link>https://lucasmazza.website/talks/tools/</link>
       <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/talks/tools/</guid>
+      <guid>https://lucasmazza.website/talks/tools/</guid>
       <description>RubyConf Brasil 2015
  </description>
     </item>
     
     <item>
       <title>Nobody told me Minitest was this fun</title>
-      <link>https://afterhours.io/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/</link>
+      <link>https://lucasmazza.website/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/</link>
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/</guid>
+      <guid>https://lucasmazza.website/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/</guid>
       <description>Where the author kinda regrets getting too attached to RSpec</description>
     </item>
     
     <item>
       <title>CSS at Plataformatec</title>
-      <link>https://afterhours.io/posts/2014-08-13-css-at-plataformatec/</link>
+      <link>https://lucasmazza.website/posts/2014-08-13-css-at-plataformatec/</link>
       <pubDate>Wed, 13 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2014-08-13-css-at-plataformatec/</guid>
+      <guid>https://lucasmazza.website/posts/2014-08-13-css-at-plataformatec/</guid>
       <description>A quick walkthrough on how we wrote CSS back in 2014</description>
     </item>
     
     <item>
       <title>3 features from Rails 4.1 that I&#39;m excited about</title>
-      <link>https://afterhours.io/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/</link>
+      <link>https://lucasmazza.website/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/</link>
       <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/</guid>
+      <guid>https://lucasmazza.website/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/</guid>
       <description>A quick rundown over some Rails 4.1 features</description>
     </item>
     
     <item>
       <title>Extending and customizing 3rd party code</title>
-      <link>https://afterhours.io/posts/2013-02-25-extending-customizing-3rd-party-code/</link>
+      <link>https://lucasmazza.website/posts/2013-02-25-extending-customizing-3rd-party-code/</link>
       <pubDate>Mon, 25 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2013-02-25-extending-customizing-3rd-party-code/</guid>
+      <guid>https://lucasmazza.website/posts/2013-02-25-extending-customizing-3rd-party-code/</guid>
       <description>Thoughts on dealing with code dependencies</description>
     </item>
     
     <item>
       <title>Flushing content blocks with Rails 4</title>
-      <link>https://afterhours.io/posts/2012-06-27-flushing-content-blocks-with-rails-4/</link>
+      <link>https://lucasmazza.website/posts/2012-06-27-flushing-content-blocks-with-rails-4/</link>
       <pubDate>Wed, 27 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/posts/2012-06-27-flushing-content-blocks-with-rails-4/</guid>
+      <guid>https://lucasmazza.website/posts/2012-06-27-flushing-content-blocks-with-rails-4/</guid>
       <description>Old trick with the Action Pack &lt;code&gt;content_for&lt;/code&gt; helper</description>
     </item>
     
     <item>
       <title>Hello, I&#39;m Lucas 👋</title>
-      <link>https://afterhours.io/about/</link>
+      <link>https://lucasmazza.website/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://afterhours.io/about/</guid>
+      <guid>https://lucasmazza.website/about/</guid>
       <description>I currently live in São Paulo, Brazil and I work with web development I have experience doing consulting projects and product development with both Ruby and Elixir and a deep interest on making development work easier through automation, development tools and monitoring.
 Outside of work you can find me enjoying specialty coffee, cooking and some casual gaming sessions.
 On the internet  GitHub: Open source projects and contributions. Twitter: Occasional tweets, pt-BR or en-US.</description>
