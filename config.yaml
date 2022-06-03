@@ -1,4 +1,4 @@
-baseURL: https://afterhours.io/
+baseURL: https://lucasmazza.website/
 disablePathToLower: true
 languageCode: en-us
 title: Lucas Mazza
@@ -59,7 +59,7 @@ menu:
       weight: 400
 
     - name: 'Livro HTML5 e CSS 3 (pt-BR)'
-      url: 'https://afterhours.io/htmlcss-exemplos'
+      url: 'https://lucasmazza.website/htmlcss-exemplos'
       weight: 500
 
     - name: Receitas (pt-BR)
