@@ -1,6 +1,6 @@
 ---
 date: "2013-02-25"
-summary: "Thoughts on dealing with code dependencies"
+description: "Thoughts on dealing with code dependencies"
 title: Extending and customizing 3rd party code
 ---
 

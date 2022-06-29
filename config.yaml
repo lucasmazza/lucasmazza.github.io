@@ -1,67 +1,32 @@
 baseURL: https://lucasmazza.website/
-disablePathToLower: true
-languageCode: en-us
 title: Lucas Mazza
-theme: anatole
 
-markup:
-  highlight:
-    style: github
-  goldmark:
-    renderer:
-      unsafe: true
-
-params:
-  title: "Lucas Mazza"
-  author: "Lucas Mazza"
-  description: "Software Engineer, coffee enthusiast, absent blogger"
-  profilePicture: "images/lucas.jpg"
-  customCss:
-    - css/overrides.css
-
-  socialIcons:
-    - icon: fa-twitter
-      title: Twitter
-      url: 'https://twitter.com/lucasmazza'
-    - icon: fa-github
-      title: GitHub
-      url: 'https://github.com/lucasmazza'
-    - icon: fa-instagram
-      title: instagram
-      url: 'https://www.instagram.com/lucasmazza'
-    - icon: fa-envelope
-      title: e-mail
-      url: 'mailto:email@lucasmazza.website'
+disablePathToLower: true
+removePathAccents: true
+languageCode: en-us
 
 permalinks:
   talks: '/talks/:slug'
 
+markup:
+  highlight:
+    style: tango
+
 menu:
   main:
-    - name: Home
-      url: /
-      identifier: home
-      weight: 100
-
-    - name: Posts
-      url: /posts/
-      identifier: posts
-      weight: 200
-
-    - name: Presentations
-      url: /talks/
-      identifier: talks
-      weight: 300
-
-    - name: About
-      url: /about/
-      identifier: about
+    - name: 'Livro HTML5 e CSS 3 →'
+      url: 'https://lucasmazza.website/htmlcss-exemplos'
+      identifier: livro
       weight: 400
 
-    - name: 'Livro HTML5 e CSS 3 (pt-BR)'
-      url: 'https://lucasmazza.website/htmlcss-exemplos'
+    - name: 'Receitas →'
+      url: 'https://lucasmazza.notion.site/lucasmazza/Receitas-79a5a48a2350465dad3c57ba866f95d4'
+      identifier: receitas
       weight: 500
 
-    - name: Receitas (pt-BR)
-      url: 'https://lucasmazza.notion.site/lucasmazza/Receitas-79a5a48a2350465dad3c57ba866f95d4'
-      weight: 600
+security:
+  exec:
+    osEnv:
+      - '(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$'
+      - ^ASDF_DIR$
+      - ^HOME$

@@ -6,4 +6,4 @@ slug: "circuit-breakers"
 
 **Guru SP - 11/2016**
 
-<script async class="speakerdeck-embed" data-id="dc81123fc5ea4cb48f2980a2a68a4171" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+{{< speakerdeck/embed id="dc81123fc5ea4cb48f2980a2a68a4171" >}}

@@ -17,4 +17,4 @@ slug: "zen-and-art-of-refactoring"
 > rescue mission and different questions we should ask ourselves before picking
 > Design Patterns or architectural jargon for the changes we want to do on our software.
 
-<script async class="speakerdeck-embed" data-id="fe9f5d8db61546b7b5b5820e806412f7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+{{< speakerdeck/embed id="fe9f5d8db61546b7b5b5820e806412f7" >}}

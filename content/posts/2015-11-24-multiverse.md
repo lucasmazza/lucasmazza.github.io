@@ -1,6 +1,6 @@
 ---
 date: "2015-11-24"
-summary: Or why we still need to say "there is no Silver Bullet"
+description: Or why we still need to say "there is no Silver Bullet"
 title: Software is a multiverse
 ---
 

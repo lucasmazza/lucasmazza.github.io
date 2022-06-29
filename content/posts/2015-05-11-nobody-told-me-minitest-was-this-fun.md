@@ -1,6 +1,6 @@
 ---
 date: "2015-05-11"
-summary: Where the author kinda regrets getting too attached to RSpec
+description: Where the author kinda regrets getting too attached to RSpec
 title: Nobody told me Minitest was this fun
 ---
 

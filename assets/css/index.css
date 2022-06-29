@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.content-body h2,
+.content-body h3, 
+.content-body h4 {
+  @apply my-6 font-extrabold;
+}
+
+.content-body a {
+  @apply text-blue-600 font-semibold underline;
+}
+
+.content-body h2 {
+  @apply text-2xl;
+}
+
+.content-body h3 {
+  @apply text-xl;
+}
+
+.content-body p,
+.content-body li {
+  @apply mb-6 leading-relaxed;
+}
+
+.content-body ul {
+  @apply list-disc pl-6;
+}
+
+.content-body ol {
+  @apply list-decimal pl-6;
+}
+
+.content-body .highlight {
+  @apply my-6;
+}
+
+.content-body p > code,
+.content-body li > code {
+  @apply bg-gray-200 rounded-md p-1 text-sm whitespace-nowrap;
+}
+
+.content-body .highlight > pre {
+  @apply rounded-lg p-4 border border-gray-200 overflow-auto;
+}

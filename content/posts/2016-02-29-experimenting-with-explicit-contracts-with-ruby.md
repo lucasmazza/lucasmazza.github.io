@@ -1,6 +1,6 @@
 ---
 date: "2016-02-29"
-summary: Bringing design ideas from Elixir projects into Ruby
+description: Bringing design ideas from Elixir projects into Ruby
 title: Experimenting with explicit contracts with Ruby
 ---
 

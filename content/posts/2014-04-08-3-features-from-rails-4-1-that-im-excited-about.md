@@ -1,6 +1,6 @@
 ---
 date: "2014-04-08"
-summary: "A quick rundown over some Rails 4.1 features"
+description: "A quick rundown over some Rails 4.1 features"
 title: 3 features from Rails 4.1 that I'm excited about
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: "2014-08-13"
-summary: A quick walkthrough on how we wrote CSS back in 2014
+description: A quick walkthrough on how we wrote CSS back in 2014
 title: CSS at Plataformatec
 ---
 

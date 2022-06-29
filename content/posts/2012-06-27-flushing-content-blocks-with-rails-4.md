@@ -1,6 +1,6 @@
 ---
 date: "2012-06-27"
-summary: "Old trick with the Action Pack `content_for` helper"
+description: "Old trick with the Action Pack `content_for` helper"
 title: Flushing content blocks with Rails 4
 ---
 

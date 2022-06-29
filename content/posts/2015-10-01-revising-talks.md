@@ -1,6 +1,6 @@
 ---
 date: "2015-10-01"
-summary: Recommendations on technical tasks from recent Ruby Conferences
+description: Recommendations on technical tasks from recent Ruby Conferences
 title: Revising talks on code and craft
 ---
 
@@ -26,7 +26,7 @@ can increase coupling, introduce points of indirection and make the codebase
 harder to work - due the higher cognitive load required to understand it - instead
 of making it easier as we all expect.
 
-<iframe width="640" height="405" src="https://www.youtube.com/embed/UvlyJv0eIf8" allowfullscreen></iframe>
+{{< youtube/embed id="UvlyJv0eIf8" >}}
 
 ### All the Little Things
 
@@ -36,8 +36,8 @@ that can teach more than the refactoring itself, showing interesting steps on
 how to tackle duplication and turn it into good abstractions and the importance
 of having a good process to deal with complexity.
 
-<iframe width="640" height="405" src="https://www.youtube.com/embed/8bZh5LMaSmE"
-allowfullscreen></iframe>
+{{< youtube/embed id="8bZh5LMaSmE"
+>}}
 
 ### I Estimate this Talk is 20 Minutes Long, Give or Take 10 Minutes
 
@@ -47,7 +47,7 @@ work as a consultant or have to deal with external clients or stakeholders this
 talk can help you whenever you need to estimate something, manage expectations
 of interested parties or help less experienced developers to deal with this.
 
-<iframe width="640" height="405" src="https://www.youtube.com/embed/FWr7L4YFzCA" allowfullscreen></iframe>
+{{< youtube/embed id="FWr7L4YFzCA" >}}
 
 ### Communicating Code
 
@@ -64,7 +64,7 @@ that you couldn't figure out what the hell was going on with the code. And the
 reply  for [one of the lightning talks](https://vimeo.com/140388283) in the
 first minutes was amazing.
 
-<iframe width="648" height="405" src="https://player.vimeo.com/video/140388278?color=b12129&byline=0&portrait=0" allowfullscreen></iframe>
+<iframe width="648" height="405" src="https://player.vimeo.com/video/140388278?color=b12129&byline=0&portrait=0" >}}
 
 ### How to Performance
 
@@ -74,4 +74,4 @@ the improvements that Rails' integration tests have received over the last month
 and you can use the lessons and tools mentioned in this talk to profile your
 application or other gems that might use a performance bump.
 
-<iframe width="648" height="405" src="https://player.vimeo.com/video/140388293?color=b12129&byline=0&portrait=0" allowfullscreen></iframe>
+<iframe width="648" height="405" src="https://player.vimeo.com/video/140388293?color=b12129&byline=0&portrait=0" >}}

@@ -1,8 +1,7 @@
 ---
 date: "2018-02-20"
-description: Values, practices and configurations on how I use git
-summary: A rundown on how I configure, use and see git as a day to day tool
 title: Git Field Guide
+description: Values, practices and configurations on how I use git
 ---
 
 Git has become an indispensable tool of software development, regardless of which

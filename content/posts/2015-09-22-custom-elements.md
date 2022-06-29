@@ -1,6 +1,6 @@
 ---
 date: "2015-09-22"
-summary: An example on moving from jQuery plugins into Web Components, minus the hype
+description: An example on moving from jQuery plugins into Web Components, minus the hype
 title: Sane usage of Custom Elements
 ---
 
