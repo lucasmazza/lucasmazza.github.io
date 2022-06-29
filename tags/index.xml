@@ -5,10 +5,6 @@
     <link>https://lucasmazza.website/tags/</link>
     <description>Recent content in Tags on Lucas Mazza</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://lucasmazza.website/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://lucasmazza.website/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

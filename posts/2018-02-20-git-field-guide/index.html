@@ -1,157 +1,74 @@
-<!DOCTYPE html>
-<html lang="en" data-theme=""><head>
-    <title> Lucas Mazza | Git Field Guide </title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Git Field Guide - Lucas Mazza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Software Engineer, coffee enthusiast, absent blogger">
-    
-    <link rel="stylesheet"
-          href="https://lucasmazza.website/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
-          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
-          crossorigin="anonymous"
-          type="text/css">
-    <link rel="stylesheet"
-          href="https://lucasmazza.website/css/overrides.bd79f32609bb701f0b5ec583c078889436f3d2ebce0b80eca8602417869948ae.css"
-          integrity="sha256-vXnzJgm7cB8LXsWDwHiIlDbz0uvOC4DsqGAkF4aZSK4="
-          crossorigin="anonymous"
-          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    
-    <link rel="shortcut icon" href="https://lucasmazza.website/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://lucasmazza.website/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://lucasmazza.website/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://lucasmazza.website/favicon-16x16.png">
 
-    <link rel="canonical" href="https://lucasmazza.website/posts/2018-02-20-git-field-guide/">
+  
 
+<link href="/css/index.min.4eecedbdec73ee336888f543465bffdfa02853889afa3672dd80ca2408976ecc.css" rel="stylesheet" />
+      <meta name="description" content="Values, practices and configurations on how I use git"/>
+      <meta property="og:title" content="Git Field Guide"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://lucasmazza.website/posts/2018-02-20-git-field-guide/"/>
+      
+      <meta property="og:description" content="Values, practices and configurations on how I use git"/>
+      <meta name="twitter:card" content="summary"/>
+      
+      
+    
+  </head>
+  <body>
     
     
-    
-    
-    <script type="text/javascript"
-            src="https://lucasmazza.website/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
-            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
-            crossorigin="anonymous"></script>
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Git Field Guide"/>
-<meta name="twitter:description" content="Values, practices and configurations on how I use git"/>
+  <div class="py-4 border-b border-slate-300 mb-4 lg:mb-8 print:hidden">
+  <div class="flex mx-auto lg:w-4/5">
+    <h1 class="flex mr-auto items-center">
+      <img src="/images/lucas.jpg" class="mr-1 w-8 h-8 rounded-md">
+      <a href="https://lucasmazza.website/" class="font-extrabold text-2xl text-green-700">Lucas Mazza</a>
+    </h1>
 
-</head>
-<body><div class="sidebar animated fadeInDown">
-    <div class="logo-title">
-        <div class="title">
-            <img src="https://lucasmazza.website/images/lucas.jpg" alt="profile picture">
-            <h3 title=""><a href="/">Lucas Mazza</a></h3>
-            <div class="description">
-                <p>Software Engineer, coffee enthusiast, absent blogger</p>
-            </div>
-        </div>
-    </div>
-    <ul class="social-links">
-        
-            <li>
-                <a href="https://twitter.com/lucasmazza" rel="me" aria-label="Twitter">
-                    <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://github.com/lucasmazza" rel="me" aria-label="GitHub">
-                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://www.instagram.com/lucasmazza" rel="me" aria-label="instagram">
-                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="mailto:email@lucasmazza.website" rel="me" aria-label="e-mail">
-                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-    </ul>
-    <div class="footer">
-        <div class="by_farbox">&copy; Lucas Mazza 2022 </div>
-    </div>
-</div>
-<div class="main">
-    <div class="page-top animated fadeInDown">
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-    </a>
-    <ul class="nav" id="navMenu">
-        
-        
-            
-            <li><a 
-                   href="/"
-                        
-                   title="">Home</a></li>
-        
-            
-            <li><a 
-                   href="/posts/"
-                        
-                   title="">Posts</a></li>
-        
-            
-            <li><a 
-                   href="/talks/"
-                        
-                   title="">Presentations</a></li>
-        
-            
-            <li><a 
-                   href="/about/"
-                        
-                   title="">About</a></li>
-        
-            
-            <li><a 
-                   href="https://lucasmazza.website/htmlcss-exemplos"
-                        
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        
-                   title="">Livro HTML5 e CSS 3 (pt-BR)</a></li>
-        
-            
-            <li><a 
-                   href="https://receitas.lucasmazza.website/"
-                        
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        
-                   title="">Receitas (pt-BR)</a></li>
-        
-        
-        <li class="theme-switch-item">
-            <a class="theme-switch" title="Switch Theme">
-                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-            </a>
-        </li>
-    </ul>
+    <nav class="flex items-center gap-3">
+      
+      
+        <a href="https://lucasmazza.website/about/" class="hover:underline hover:text-green-900 ">About me</a>
+      
+        <a href="https://lucasmazza.website/posts/" class="hover:underline hover:text-green-900 ">Posts</a>
+      
+        <a href="https://lucasmazza.website/talks/" class="hover:underline hover:text-green-900 ">Presentations</a>
+      
+        <a href="https://lucasmazza.website/htmlcss-exemplos" class="hover:underline hover:text-green-900 ">Livro HTML5 e CSS 3 →</a>
+      
+        <a href="https://lucasmazza.notion.site/lucasmazza/Receitas-79a5a48a2350465dad3c57ba866f95d4" class="hover:underline hover:text-green-900 ">Receitas →</a>
+      
+    </nav>
+  </div>
 </div>
 
-    <div class="autopagerize_page_element">
-        <div class="content">
-    <div class="post animated fadeInDown">
-        <div class="post-content">
+  <div class="mx-auto lg:w-7/12 px-4 mb-4 lg:p-0">
+    <div class="mb-8 lg:flex items-center">
+      <h1 class="font-extrabold text-4xl mr-auto">Git Field Guide</h1>
 
-            <div class="post-title">
-                <h3>Git Field Guide</h3>
-                
-            </div>
-
-            <p>Git has become an indispensable tool of software development, regardless of which
+      
+        <span class="bg-gray-100 text-gray-800 border border-gray-200 text-sm font-bold inline-flex items-center px-2.5 py-0.5 rounded mr-2 lg:mr-4 whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+          </svg>
+          Feb 20, 2018
+        </span>
+      
+    </div>
+    <article class="content-body pb-8">
+      <p>Git has become an indispensable tool of software development, regardless of which
 language or framework your team uses it. But in the other hand, it isn&rsquo;t a tool
 that you can adopt, learn and be effective from day 1 - it takes time and guidance
 to master it, both in the command line the integrations and practices most teams
@@ -190,50 +107,50 @@ every now and then, rebasing it early and often with its base branch (the <code>
 branch on your remote repository on most cases), and fixing conflicts as soon
 as they happen. Fixing conflicts on larger rebases will be harder and merges
 will add noisy commits to your branch&rsquo;s history.
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git checkout feature/add-new-stuff
-<span style="color:#998;font-style:italic"># work work work...</span>
-<span style="color:#998;font-style:italic"># download the refs that are on your remote repository, and rebase your feature</span>
-<span style="color:#998;font-style:italic"># branch on top of whatever&#39;s is on your remote&#39;s master branch, so it will be</span>
-<span style="color:#998;font-style:italic"># up to date. Hopefully no conflicts will need to be fixed.</span>
-git fetch origin <span style="color:#000;font-weight:bold">&amp;&amp;</span> <span style="color:#d14">\
-</span><span style="color:#d14"></span>  git rebase origin/master
-
-<span style="color:#998;font-style:italic"># if you want to make your local `master` branch is up to date as well, do</span>
-<span style="color:#998;font-style:italic"># the following: `git pull` will fetch and rebase the references from your</span>
-<span style="color:#998;font-style:italic"># remote repository, and then rebase the feature branch against the local</span>
-<span style="color:#998;font-style:italic"># master branch instead.</span>
-git checkout master <span style="color:#000;font-weight:bold">&amp;&amp;</span> <span style="color:#d14">\
-</span><span style="color:#d14"></span>  git pull --rebase <span style="color:#000;font-weight:bold">&amp;&amp;</span> <span style="color:#d14">\
-</span><span style="color:#d14"></span>  git checkout - <span style="color:#000;font-weight:bold">&amp;&amp;</span> <span style="color:#d14">\
-</span><span style="color:#d14"></span>  git rebase master
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout feature/add-new-stuff
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># work work work...</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># download the refs that are on your remote repository, and rebase your feature</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># branch on top of whatever&#39;s is on your remote&#39;s master branch, so it will be</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># up to date. Hopefully no conflicts will need to be fixed.</span>
+</span></span><span style="display:flex;"><span>git fetch origin <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#4e9a06">\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>  git rebase origin/master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># if you want to make your local `master` branch is up to date as well, do</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># the following: `git pull` will fetch and rebase the references from your</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># remote repository, and then rebase the feature branch against the local</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># master branch instead.</span>
+</span></span><span style="display:flex;"><span>git checkout master <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#4e9a06">\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>  git pull --rebase <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#4e9a06">\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>  git checkout - <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#4e9a06">\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>  git rebase master
+</span></span></code></pre></div></li>
 <li><strong>Use <a href="https://robots.thoughtbot.com/autosquashing-git-commits">git commit &ndash;fixup</a></strong>
 and <a href="https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history">interactive rebases</a>
 to rewrite the history on your feature branches to keep its commits in order and
 organized. Intermediate changes are useful when rolling changes and trying fixes, but
 once the dust has settled you can rework the history to represent the final changes
 you want to introduce.
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#998;font-style:italic"># So, you added a few files and some commits on your branch</span>
-git commit -m <span style="color:#d14">&#39;Add README.md&#39;</span>
-<span style="color:#998;font-style:italic"># [master (root-commit) f1a4ab4] Add README.md</span>
-<span style="color:#998;font-style:italic">#  1 file changed, 0 insertions(+), 0 deletions(-)</span>
-<span style="color:#998;font-style:italic">#  create mode 100644 README.md</span>
-$ git commit -m <span style="color:#d14">&#39;Add CONTRIBUTING.md&#39;</span>
-<span style="color:#998;font-style:italic"># [master e8644e4] Add CONTRIBUTING.md</span>
-<span style="color:#998;font-style:italic">#  1 file changed, 0 insertions(+), 0 deletions(-)</span>
-<span style="color:#998;font-style:italic">#  create mode 100644 CONTRIBUTING.md</span>
-
-<span style="color:#998;font-style:italic"># Now you need to update `README.md` and want to &#34;merge&#34; the new commit with</span>
-<span style="color:#998;font-style:italic"># these new changes to the original commit (f1a4ab4) using an interactive rebase</span>
-git add README.md
-git commit --fixup f1a4ab4
-<span style="color:#998;font-style:italic"># [master 13168c2] fixup! Add README.md</span>
-<span style="color:#998;font-style:italic">#  1 file changed, 0 insertions(+), 0 deletions(-)</span>
-
-<span style="color:#998;font-style:italic"># `--autosquash` will prepare the interactive rebase to squash 13168c2 on f1a4ab4</span>
-<span style="color:#998;font-style:italic"># for you.</span>
-git rebase --interactive --autosquash HEAD~3
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># So, you added a few files and some commits on your branch</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#4e9a06">&#39;Add README.md&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># [master (root-commit) f1a4ab4] Add README.md</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#  1 file changed, 0 insertions(+), 0 deletions(-)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#  create mode 100644 README.md</span>
+</span></span><span style="display:flex;"><span>$ git commit -m <span style="color:#4e9a06">&#39;Add CONTRIBUTING.md&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># [master e8644e4] Add CONTRIBUTING.md</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#  1 file changed, 0 insertions(+), 0 deletions(-)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#  create mode 100644 CONTRIBUTING.md</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Now you need to update `README.md` and want to &#34;merge&#34; the new commit with</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># these new changes to the original commit (f1a4ab4) using an interactive rebase</span>
+</span></span><span style="display:flex;"><span>git add README.md
+</span></span><span style="display:flex;"><span>git commit --fixup f1a4ab4
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># [master 13168c2] fixup! Add README.md</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#  1 file changed, 0 insertions(+), 0 deletions(-)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># `--autosquash` will prepare the interactive rebase to squash 13168c2 on f1a4ab4</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># for you.</span>
+</span></span><span style="display:flex;"><span>git rebase --interactive --autosquash HEAD~3
+</span></span></code></pre></div></li>
 <li>Not all branches/Pull Requests need to be <strong>squashed into a single commit</strong> when
 doing interactive rebases. Squashing too many commits can make bisecting or
 navigating through the history harder than you might want to. You can practice
@@ -269,39 +186,18 @@ through your editor to describe what the rebase should do with each commit (<cod
 <p><em>For more configuration settings and aliases that I use (and don&rsquo;t use), you
 can check my <a href="https://github.com/lucasmazza/dotfiles/blob/master/symlinks/gitconfig">gitconfig on GitHub</a>.</em></p>
 
-        </div>
-        <div class="post-footer">
-            <div class="info">
-                
-                
-            </div>
-        </div>
+    </article>
+  </div>
 
-        
-    </div>
-
-
-        </div>
-    </div>
+  <div class="py-8 flex lg:mx-auto lg:w-7/12 border-t border-slate-300 lg:justify-center gap-4 print:hidden">
+  <p class="font-xs text-green-900">
+    Copyright &copy; 2022 Lucas Mazza
+  </p>
 </div>
 
-<script type="text/javascript"
-        src="https://lucasmazza.website/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
-        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
-        crossorigin="anonymous"></script>
 
-
-
-
-<script type="text/javascript"
-        src="https://lucasmazza.website/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
-        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
-        crossorigin="anonymous"></script>
-
-<script type="text/javascript"
-        src="https://lucasmazza.website/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
-        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
-        crossorigin="anonymous"></script>
-</body>
-
+    
+    
+    
+  </body>
 </html>

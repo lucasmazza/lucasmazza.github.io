@@ -1,157 +1,74 @@
-<!DOCTYPE html>
-<html lang="en" data-theme=""><head>
-    <title> Lucas Mazza | Sane usage of Custom Elements </title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sane usage of Custom Elements - Lucas Mazza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Software Engineer, coffee enthusiast, absent blogger">
-    
-    <link rel="stylesheet"
-          href="https://lucasmazza.website/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
-          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
-          crossorigin="anonymous"
-          type="text/css">
-    <link rel="stylesheet"
-          href="https://lucasmazza.website/css/overrides.bd79f32609bb701f0b5ec583c078889436f3d2ebce0b80eca8602417869948ae.css"
-          integrity="sha256-vXnzJgm7cB8LXsWDwHiIlDbz0uvOC4DsqGAkF4aZSK4="
-          crossorigin="anonymous"
-          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    
-    <link rel="shortcut icon" href="https://lucasmazza.website/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://lucasmazza.website/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://lucasmazza.website/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://lucasmazza.website/favicon-16x16.png">
 
-    <link rel="canonical" href="https://lucasmazza.website/posts/2015-09-22-custom-elements/">
+  
 
+<link href="/css/index.min.4eecedbdec73ee336888f543465bffdfa02853889afa3672dd80ca2408976ecc.css" rel="stylesheet" />
+      <meta name="description" content="An example on moving from jQuery plugins into Web Components, minus the hype"/>
+      <meta property="og:title" content="Sane usage of Custom Elements"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://lucasmazza.website/posts/2015-09-22-custom-elements/"/>
+      
+      <meta property="og:description" content="An example on moving from jQuery plugins into Web Components, minus the hype"/>
+      <meta name="twitter:card" content="summary"/>
+      
+      
+    
+  </head>
+  <body>
     
     
-    
-    
-    <script type="text/javascript"
-            src="https://lucasmazza.website/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
-            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
-            crossorigin="anonymous"></script>
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Sane usage of Custom Elements"/>
-<meta name="twitter:description" content="An example on moving from jQuery plugins into Web Components, minus the hype"/>
+  <div class="py-4 border-b border-slate-300 mb-4 lg:mb-8 print:hidden">
+  <div class="flex mx-auto lg:w-4/5">
+    <h1 class="flex mr-auto items-center">
+      <img src="/images/lucas.jpg" class="mr-1 w-8 h-8 rounded-md">
+      <a href="https://lucasmazza.website/" class="font-extrabold text-2xl text-green-700">Lucas Mazza</a>
+    </h1>
 
-</head>
-<body><div class="sidebar animated fadeInDown">
-    <div class="logo-title">
-        <div class="title">
-            <img src="https://lucasmazza.website/images/lucas.jpg" alt="profile picture">
-            <h3 title=""><a href="/">Lucas Mazza</a></h3>
-            <div class="description">
-                <p>Software Engineer, coffee enthusiast, absent blogger</p>
-            </div>
-        </div>
-    </div>
-    <ul class="social-links">
-        
-            <li>
-                <a href="https://twitter.com/lucasmazza" rel="me" aria-label="Twitter">
-                    <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://github.com/lucasmazza" rel="me" aria-label="GitHub">
-                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://www.instagram.com/lucasmazza" rel="me" aria-label="instagram">
-                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            <li>
-                <a href="mailto:email@lucasmazza.website" rel="me" aria-label="e-mail">
-                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-    </ul>
-    <div class="footer">
-        <div class="by_farbox">&copy; Lucas Mazza 2022 </div>
-    </div>
-</div>
-<div class="main">
-    <div class="page-top animated fadeInDown">
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-    </a>
-    <ul class="nav" id="navMenu">
-        
-        
-            
-            <li><a 
-                   href="/"
-                        
-                   title="">Home</a></li>
-        
-            
-            <li><a 
-                   href="/posts/"
-                        
-                   title="">Posts</a></li>
-        
-            
-            <li><a 
-                   href="/talks/"
-                        
-                   title="">Presentations</a></li>
-        
-            
-            <li><a 
-                   href="/about/"
-                        
-                   title="">About</a></li>
-        
-            
-            <li><a 
-                   href="https://lucasmazza.website/htmlcss-exemplos"
-                        
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        
-                   title="">Livro HTML5 e CSS 3 (pt-BR)</a></li>
-        
-            
-            <li><a 
-                   href="https://receitas.lucasmazza.website/"
-                        
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        
-                   title="">Receitas (pt-BR)</a></li>
-        
-        
-        <li class="theme-switch-item">
-            <a class="theme-switch" title="Switch Theme">
-                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-            </a>
-        </li>
-    </ul>
+    <nav class="flex items-center gap-3">
+      
+      
+        <a href="https://lucasmazza.website/about/" class="hover:underline hover:text-green-900 ">About me</a>
+      
+        <a href="https://lucasmazza.website/posts/" class="hover:underline hover:text-green-900 ">Posts</a>
+      
+        <a href="https://lucasmazza.website/talks/" class="hover:underline hover:text-green-900 ">Presentations</a>
+      
+        <a href="https://lucasmazza.website/htmlcss-exemplos" class="hover:underline hover:text-green-900 ">Livro HTML5 e CSS 3 →</a>
+      
+        <a href="https://lucasmazza.notion.site/lucasmazza/Receitas-79a5a48a2350465dad3c57ba866f95d4" class="hover:underline hover:text-green-900 ">Receitas →</a>
+      
+    </nav>
+  </div>
 </div>
 
-    <div class="autopagerize_page_element">
-        <div class="content">
-    <div class="post animated fadeInDown">
-        <div class="post-content">
+  <div class="mx-auto lg:w-7/12 px-4 mb-4 lg:p-0">
+    <div class="mb-8 lg:flex items-center">
+      <h1 class="font-extrabold text-4xl mr-auto">Sane usage of Custom Elements</h1>
 
-            <div class="post-title">
-                <h3>Sane usage of Custom Elements</h3>
-                
-            </div>
-
-            <p>Web Components have been an controversial subject that surfaced in the Front end
+      
+        <span class="bg-gray-100 text-gray-800 border border-gray-200 text-sm font-bold inline-flex items-center px-2.5 py-0.5 rounded mr-2 lg:mr-4 whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+          </svg>
+          Sep 22, 2015
+        </span>
+      
+    </div>
+    <article class="content-body pb-8">
+      <p>Web Components have been an controversial subject that surfaced in the Front end
 world over the last years that I&rsquo;m still pretty skeptical about its usage on
 existing and greenfield projects due the lack of good examples on how they
 can be rolled out to production, but I believe there is a way to get started with them
@@ -169,23 +86,23 @@ delegate the event handlers through the document element.</p>
 on the validation status of inputs placed inside the same <code>form</code> as the <code>button</code>
 element.</p>
 <p>A trivial implementation could be as simple as the following:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000;font-weight:bold">function</span> bindDisabledButton() {
-  $(<span style="color:#d14">&#39;[data-disabled-button]&#39;</span>).each(<span style="color:#000;font-weight:bold">function</span>() {
-    <span style="color:#000;font-weight:bold">let</span> button <span style="color:#000;font-weight:bold">=</span> $(<span style="color:#000;font-weight:bold">this</span>),
-        form <span style="color:#000;font-weight:bold">=</span> button.parents(<span style="color:#d14">&#39;form&#39;</span>),
-        input <span style="color:#000;font-weight:bold">=</span> form.find(<span style="color:#d14">&#39;input:not(:hidden), select&#39;</span>);
-
-    <span style="color:#000;font-weight:bold">function</span> updateButton() {
-      button.prop(<span style="color:#d14">&#39;disabled&#39;</span>, <span style="color:#000;font-weight:bold">!</span>inputs.get().every(input =&gt; input.checkValidity());
-    }
-
-    inputs.on(<span style="color:#d14">&#39;keyup change&#39;</span>, updateButton);
-    updateButton();
-  });
-}
-
-$(bindDisabledButton);
-</code></pre></div><p><em>We could <code>delegate</code> a <code>change</code> event on all inputs with validation and traverse
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">bindDisabledButton</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;[data-disabled-button]&#39;</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">each</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">let</span> <span style="color:#000">button</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">form</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">button</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parents</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;form&#39;</span><span style="color:#000;font-weight:bold">),</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">input</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">form</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">find</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;input:not(:hidden), select&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">updateButton</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#000">button</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prop</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;disabled&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">!</span><span style="color:#000">inputs</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">get</span><span style="color:#000;font-weight:bold">().</span><span style="color:#000">every</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">input</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000">input</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">checkValidity</span><span style="color:#000;font-weight:bold">());</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">inputs</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">on</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;keyup change&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">updateButton</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">updateButton</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">});</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">bindDisabledButton</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p><em>We could <code>delegate</code> a <code>change</code> event on all inputs with validation and traverse
 the DOM to grab their parent <code>form</code>, sibling inputs and <code>button</code>, but let&rsquo;s assume
 the given code as the first implementation of this for this post.</em></p>
 <p>The code would Probably Work™, and could be refactored to use different abstractions,
@@ -200,8 +117,8 @@ rendered in the browser, but it can become a huge pain in the ass when we sprink
 more and more JavaScript on it and do things like Turbolinks/Pjax transitions or
 plain DOM updates through XHR requests or client side logic: since we are responsible
 for initialize this element, we must remember this every time the DOM changes.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">$(<span style="color:#0086b3">document</span>).on(<span style="color:#d14">&#39;ready page:load pjax:complete omg:wtf:bbq&#39;</span>, bindDisabledButton);
-</code></pre></div><p>This can easily escalate into more code to manually handle the life and death of
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000">$</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">on</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;ready page:load pjax:complete omg:wtf:bbq&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">bindDisabledButton</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>This can easily escalate into more code to manually handle the life and death of
 our enhanced elements - we need to care about when they need to be created in
 our application and sometimes even when they need to be removed, as we might need to
 cleanup event handlers or related elements that aren&rsquo;t properly isolated with the
@@ -216,67 +133,67 @@ all this lifecycle logic that can leak through our applications into self contai
 elements.</p>
 <p>For instance, this is how the same <code>[data-disabled-button]</code> plugin can be
 re-implemented as a Custom Element:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#998;font-style:italic">// app/assets/javascripts/elements/disabled-button.es6
-</span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> slice <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">Array</span>.prototype.slice;
-
-<span style="color:#998;font-style:italic">// Public: Custom `button` element that is enabled and disabled based on the
-</span><span style="color:#998;font-style:italic">// validity state of the inputs inside the same &#39;form&#39; element as the button.
-</span><span style="color:#998;font-style:italic">//
-</span><span style="color:#998;font-style:italic">// Example
-</span><span style="color:#998;font-style:italic">//
-</span><span style="color:#998;font-style:italic">//  &lt;form&gt;
-</span><span style="color:#998;font-style:italic">//    &lt;input name=&#39;name&#39; required /&gt;
-</span><span style="color:#998;font-style:italic">//    &lt;button is=&#39;disabled-button&#39;&gt;Click me after you fill in the input&lt;/button&gt;
-</span><span style="color:#998;font-style:italic">//  &lt;/form&gt;
-</span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">const</span> DisabledButton <span style="color:#000;font-weight:bold">=</span> {
-  attachedCallback() {
-    <span style="color:#000;font-weight:bold">this</span>._form <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">this</span>._findForm(<span style="color:#000;font-weight:bold">this</span>);
-    <span style="color:#000;font-weight:bold">this</span>._updateCallback <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">this</span>._update.bind(<span style="color:#000;font-weight:bold">this</span>);
-    <span style="color:#000;font-weight:bold">this</span>._form.addEventListener(<span style="color:#d14">&#39;keyup&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback, <span style="color:#000;font-weight:bold">false</span>);
-    <span style="color:#000;font-weight:bold">this</span>._form.addEventListener(<span style="color:#d14">&#39;change&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback, <span style="color:#000;font-weight:bold">false</span>);
-    <span style="color:#000;font-weight:bold">this</span>._updateCallback();
-  },
-
-  detachedCallback() {
-    <span style="color:#000;font-weight:bold">this</span>._form.removeEventListener(<span style="color:#d14">&#39;keyup&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback);
-    <span style="color:#000;font-weight:bold">this</span>._form.removeEventListener(<span style="color:#d14">&#39;change&#39;</span>, <span style="color:#000;font-weight:bold">this</span>._updateCallback);
-  },
-
-  _update() {
-    <span style="color:#000;font-weight:bold">let</span> inputs <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">this</span>._findInputs(<span style="color:#000;font-weight:bold">this</span>._form);
-
-    <span style="color:#000;font-weight:bold">if</span> (inputs.every(input =&gt; input.checkValidity())) {
-      <span style="color:#000;font-weight:bold">this</span>.removeAttribute(<span style="color:#d14">&#39;disabled&#39;</span>);
-    } <span style="color:#000;font-weight:bold">else</span> {
-      <span style="color:#000;font-weight:bold">this</span>.setAttribute(<span style="color:#d14">&#39;disabled&#39;</span>, <span style="color:#000;font-weight:bold">true</span>);
-    }
-  },
-
-  _findInputs(form) {
-    <span style="color:#000;font-weight:bold">let</span> inputs <span style="color:#000;font-weight:bold">=</span> slice.call(form.querySelectorAll(<span style="color:#d14">&#39;input, select&#39;</span>), <span style="color:#099">0</span>);
-
-    <span style="color:#000;font-weight:bold">return</span> inputs.filter(input =&gt; input.type <span style="color:#000;font-weight:bold">!==</span> <span style="color:#d14">&#39;hidden&#39;</span>);
-  },
-
-  _findForm(element) {
-    <span style="color:#000;font-weight:bold">if</span> (element.nodeName <span style="color:#000;font-weight:bold">===</span> <span style="color:#d14">&#39;FORM&#39;</span>) {
-      <span style="color:#000;font-weight:bold">return</span> element;
-    } <span style="color:#000;font-weight:bold">else</span> {
-      <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">this</span>._findForm(element.parentElement);
-    }
-  }
-};
-
-<span style="color:#000;font-weight:bold">const</span> DisabledButtonPrototype <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">Object</span>.create(HTMLButtonElement.prototype);
-<span style="color:#0086b3">Object</span>.keys(DisabledButton).forEach(prop =&gt; {
-  DisabledButtonPrototype[prop] <span style="color:#000;font-weight:bold">=</span> DisabledButton[prop];
-});
-
-<span style="color:#0086b3">window</span>.DisabledButtonElement <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">document</span>.registerElement(<span style="color:#d14">&#39;disabled-button&#39;</span>, {
-  prototype<span style="color:#000;font-weight:bold">:</span> DisabledButtonPrototype,
-  <span style="color:#d14">&#39;extends&#39;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;button&#39;</span>
-});
-</code></pre></div><p>Now, every time the browser adds a <code>disabled-button</code> element or a <code>button</code> with
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// app/assets/javascripts/elements/disabled-button.es6
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">slice</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">Array</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">slice</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Public: Custom `button` element that is enabled and disabled based on the
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// validity state of the inputs inside the same &#39;form&#39; element as the button.
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Example
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//  &lt;form&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//    &lt;input name=&#39;name&#39; required /&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//    &lt;button is=&#39;disabled-button&#39;&gt;Click me after you fill in the input&lt;/button&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//  &lt;/form&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">DisabledButton</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">attachedCallback</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_form</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_findForm</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_updateCallback</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_update</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">bind</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_form</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addEventListener</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;keyup&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_updateCallback</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">false</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_form</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addEventListener</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;change&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_updateCallback</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">false</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_updateCallback</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">detachedCallback</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_form</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">removeEventListener</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;keyup&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_updateCallback</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_form</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">removeEventListener</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;change&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_updateCallback</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">_update</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">let</span> <span style="color:#000">inputs</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_findInputs</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_form</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">inputs</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">every</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">input</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000">input</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">checkValidity</span><span style="color:#000;font-weight:bold">()))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">removeAttribute</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;disabled&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setAttribute</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;disabled&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">_findInputs</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">form</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">let</span> <span style="color:#000">inputs</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">slice</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">form</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">querySelectorAll</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;input, select&#39;</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">inputs</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">filter</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">input</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000">input</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">type</span> <span style="color:#ce5c00;font-weight:bold">!==</span> <span style="color:#4e9a06">&#39;hidden&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">_findForm</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">element</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">element</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">nodeName</span> <span style="color:#ce5c00;font-weight:bold">===</span> <span style="color:#4e9a06">&#39;FORM&#39;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">element</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">_findForm</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">element</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parentElement</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">DisabledButtonPrototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">Object</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">create</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">HTMLButtonElement</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">Object</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">keys</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">DisabledButton</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">forEach</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">prop</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">DisabledButtonPrototype</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">prop</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">DisabledButton</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">prop</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">});</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">window</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">DisabledButtonElement</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">registerElement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;disabled-button&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">prototype</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000">DisabledButtonPrototype</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#4e9a06">&#39;extends&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;button&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">});</span>
+</span></span></code></pre></div><p>Now, every time the browser adds a <code>disabled-button</code> element or a <code>button</code> with
 <code>is='disabled-button'</code>, it will be responsible for adding
 the necessary behavior to our button to be disabled when its parent form isn&rsquo;t
 valid or not, regardless of how the element got there in the first place - a
@@ -312,39 +229,18 @@ like our <code>disabled-button</code> example.</li>
 and <a href="https://github.com/github/include-fragment-element"><code>include-fragment-element</code></a> are
 the first ones that come to mind.</p>
 
-        </div>
-        <div class="post-footer">
-            <div class="info">
-                
-                
-            </div>
-        </div>
+    </article>
+  </div>
 
-        
-    </div>
-
-
-        </div>
-    </div>
+  <div class="py-8 flex lg:mx-auto lg:w-7/12 border-t border-slate-300 lg:justify-center gap-4 print:hidden">
+  <p class="font-xs text-green-900">
+    Copyright &copy; 2022 Lucas Mazza
+  </p>
 </div>
 
-<script type="text/javascript"
-        src="https://lucasmazza.website/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
-        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
-        crossorigin="anonymous"></script>
 
-
-
-
-<script type="text/javascript"
-        src="https://lucasmazza.website/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
-        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
-        crossorigin="anonymous"></script>
-
-<script type="text/javascript"
-        src="https://lucasmazza.website/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
-        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
-        crossorigin="anonymous"></script>
-</body>
-
+    
+    
+    
+  </body>
 </html>

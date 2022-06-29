@@ -1,127 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://lucasmazza.website/talks/ecto-sem-sql/</loc>
     <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/</loc>
     <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lucasmazza.website/talks/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/talks/feature-toggles/</loc>
     <lastmod>2018-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/talks/testes/</loc>
     <lastmod>2018-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2018-02-20-git-field-guide/</loc>
     <lastmod>2018-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lucasmazza.website/posts/</loc>
-    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/talks/circuit-breakers/</loc>
     <lastmod>2016-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</loc>
     <lastmod>2016-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/talks/minitest/</loc>
     <lastmod>2016-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2016-02-29-experimenting-with-explicit-contracts-with-ruby/</loc>
     <lastmod>2016-02-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2015-12-31-books-from-2015/</loc>
     <lastmod>2015-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2015-11-24-multiverse/</loc>
     <lastmod>2015-11-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lucasmazza.website/talks/10-coisas/</loc>
-    <lastmod>2015-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2015-10-01-revising-talks/</loc>
     <lastmod>2015-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2015-09-22-custom-elements/</loc>
     <lastmod>2015-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lucasmazza.website/talks/tools/</loc>
-    <lastmod>2015-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/</loc>
     <lastmod>2015-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2014-08-13-css-at-plataformatec/</loc>
     <lastmod>2014-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/</loc>
     <lastmod>2014-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2013-02-25-extending-customizing-3rd-party-code/</loc>
     <lastmod>2013-02-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://lucasmazza.website/talks/</loc>
+    <lastmod>2012-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lucasmazza.website/posts/</loc>
+    <lastmod>2012-06-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://lucasmazza.website/posts/2012-06-27-flushing-content-blocks-with-rails-4/</loc>
     <lastmod>2012-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lucasmazza.website/tags/</loc>
   </url>
-  
 </urlset>

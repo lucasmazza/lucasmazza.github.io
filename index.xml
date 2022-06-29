@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lucas Mazza</title>
+    <title>Hello 👋 on Lucas Mazza</title>
     <link>https://lucasmazza.website/</link>
-    <description>Recent content on Lucas Mazza</description>
+    <description>Recent content in Hello 👋 on Lucas Mazza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://lucasmazza.website/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://lucasmazza.website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ecto sem SQL</title>
       <link>https://lucasmazza.website/talks/ecto-sem-sql/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://lucasmazza.website/talks/ecto-sem-sql/</guid>
       <description>Elug SP - 07/2019
- Um dos objetivos do design do ecto é ser um &amp;ldquo;toolkit para mapeamento de dados&amp;rdquo; independente do uso de &amp;gt; um banco de dados por de trás dos panos, e nesta palestra vamos ver alguns casos de uso de schemas e &amp;gt; changesets em situações diferentes de aplicações onde um banco de dados não está presente mas o ecto &amp;gt; nos ajuda a resolver problemas no dia a dia.</description>
+Um dos objetivos do design do ecto é ser um &amp;ldquo;toolkit para mapeamento de dados&amp;rdquo; independente do uso de um banco de dados por de trás dos panos, e nesta palestra vamos ver alguns casos de uso de schemas e changesets em situações diferentes de aplicações onde um banco de dados não está presente mas o ecto nos ajuda a resolver problemas no dia a dia.</description>
     </item>
     
     <item>
@@ -28,7 +24,7 @@
       
       <guid>https://lucasmazza.website/talks/feature-toggles/</guid>
       <description>Guru SP - 08/2018, Elug SP - 08/2018
- Feature toggles são uma técnica muito versátil para ajudar o trabalho de disponibilizar novas funcionalidades em produção sem quebrar a experiência de clientes e fazer entregas graduais, mas acabamos aprendendo sobre toggles de uma forma superficial no dia a dia.
+Feature toggles são uma técnica muito versátil para ajudar o trabalho de disponibilizar novas funcionalidades em produção sem quebrar a experiência de clientes e fazer entregas graduais, mas acabamos aprendendo sobre toggles de uma forma superficial no dia a dia.
 Vamos ver um pouco do passado e presente do uso de features toggles, a sua facilidade de uso graças a ferramentas open source e considerações a serem feitas sobre como e quando usar toggles na sua aplicação</description>
     </item>
     
@@ -39,7 +35,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       
       <guid>https://lucasmazza.website/talks/testes/</guid>
       <description>Guru SP - 02/2018
- Escrever testes automáticos é uma prática bem estabelecida na comunidade Ruby, mas o quão bons são os testes que escrevemos? Na correria do dia a dia, estamos testando de forma efetiva ou só escrevendo mais código? Nesta palestra vamos ver alguns vícios e más práticas tradicionais de projetos Ruby, como podemos evitá-los e escrever testes melhores, e quais mudanças de pensando e práticas podemos adotar para aprimorar a nossa escrita de testes de software.</description>
+Escrever testes automáticos é uma prática bem estabelecida na comunidade Ruby, mas o quão bons são os testes que escrevemos? Na correria do dia a dia, estamos testando de forma efetiva ou só escrevendo mais código? Nesta palestra vamos ver alguns vícios e más práticas tradicionais de projetos Ruby, como podemos evitá-los e escrever testes melhores, e quais mudanças de pensando e práticas podemos adotar para aprimorar a nossa escrita de testes de software.</description>
     </item>
     
     <item>
@@ -48,7 +44,8 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2018-02-20-git-field-guide/</guid>
-      <description>A rundown on how I configure, use and see git as a day to day tool</description>
+      <description>Git has become an indispensable tool of software development, regardless of which language or framework your team uses it. But in the other hand, it isn&amp;rsquo;t a tool that you can adopt, learn and be effective from day 1 - it takes time and guidance to master it, both in the command line the integrations and practices most teams have adopted.
+I&amp;rsquo;ve put up together a guide on how I see and use git on my day to day work, that can be used as a starting both for both newcomers who are trying to grok or more experienced professionals who want to make a more effective use of it on they work.</description>
     </item>
     
     <item>
@@ -57,8 +54,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/talks/circuit-breakers/</guid>
-      <description>Guru SP - 11/2016
- </description>
+      <description>Guru SP - 11/2016</description>
     </item>
     
     <item>
@@ -68,7 +64,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       
       <guid>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</guid>
       <description>RubyConf Brazil 2016
- Refactoring is often seen as a process where we make bad code better by waving our wands and casting our secret spells while facing our editors, which usually happens when things are on fire and the pressure is on. Changing software should be easier and not scary, and one of the first steps to do it is not to try to write future-proof code, but we can adopt different steps to think about the changes we want to do and how we can do them.</description>
+Refactoring is often seen as a process where we make bad code better by waving our wands and casting our secret spells while facing our editors, which usually happens when things are on fire and the pressure is on. Changing software should be easier and not scary, and one of the first steps to do it is not to try to write future-proof code, but we can adopt different steps to think about the changes we want to do and how we can do them.</description>
     </item>
     
     <item>
@@ -78,8 +74,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       
       <guid>https://lucasmazza.website/talks/minitest/</guid>
       <description>Guru SP - 07/2016
- Minitest nasceu como uma alternativa ao test/unit do Ruby 1.8 e se tornou um framework de testes extremamente robusto e ao mesmo tempo simples, e está disponível em qualquer instalação de Ruby hoje em dia, para todos escrevem testes sem muita burocracia.
-  </description>
+Minitest nasceu como uma alternativa ao test/unit do Ruby 1.8 e se tornou um framework de testes extremamente robusto e ao mesmo tempo simples, e está disponível em qualquer instalação de Ruby hoje em dia, para todos escrevem testes sem muita burocracia.</description>
     </item>
     
     <item>
@@ -88,7 +83,8 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Mon, 29 Feb 2016 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2016-02-29-experimenting-with-explicit-contracts-with-ruby/</guid>
-      <description>Bringing design ideas from Elixir projects into Ruby</description>
+      <description>A few months back, José Valim started a conversation on overusing mocks and coupling between components. That made me interested on revisiting how I design my code and it has changed my approach to testing a bit in one of our current Ruby projects.
+A Tale of Two Adapters Back in November, I worked on integrating a payment gateway from scratch into one of our client projects, through a gem that abstracts the HTTP interface of this external service.</description>
     </item>
     
     <item>
@@ -97,7 +93,8 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2015-12-31-books-from-2015/</guid>
-      <description>Non technical reads from 2015</description>
+      <description>2015 was the first year that I had a New Year&amp;rsquo;s Eve resolution to do: to read more books. I&amp;rsquo;m used to read a lot of blog posts and articles online but I wasn&amp;rsquo;t reading much outside of it (and most of what I was reading was strictly related to Rails and Front end anyway), so I set a goal of 12 books, technical or not, for 2015.
+I&amp;rsquo;ve got it Close Enough™ - 10 books in 12 months, and half way through the eleventh one.</description>
     </item>
     
     <item>
@@ -106,18 +103,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2015-11-24-multiverse/</guid>
-      <description>Or why we still need to say &amp;ldquo;there is no Silver Bullet&amp;rdquo;</description>
-    </item>
-    
-    <item>
-      <title>10 coisas que eu gostaria de ter aprendido mais cedo</title>
-      <link>https://lucasmazza.website/talks/10-coisas/</link>
-      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucasmazza.website/talks/10-coisas/</guid>
-      <description>Front in Manaus 2015
- Amigos desenvolvedores, o que vocês gostariam de ter aprendido no passado quando começaram com desenvolvimento de software que vocês sabem agora? Abram seus corações. Nessa apresentação vou mostrar um compilado de aprendizado que eu e meus colegas de profissão compartilhamos durante a carreira.
-  </description>
+      <description>Predicting the future is hard, yet programmers like to repeat that Framework X or Language Y is the future of programming, the savior of all large scale projects and complex refactorings, and everything else is outdated, unfashion and awful (I’ve seen this with most client side frameworks, a dozen of programming languages and a couple of times when someone decided to dig deep on functional programming). But as our small history on dealing with computers can show us, reality doesn’t work like that.</description>
     </item>
     
     <item>
@@ -126,7 +112,8 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2015-10-01-revising-talks/</guid>
-      <description>Recommendations on technical tasks from recent Ruby Conferences</description>
+      <description>Over the last couple weeks I decided to get back to watching videos from conference talks, old and new, to deal with matters of the heart and help with some of the ongoing discussions in the current project I&amp;rsquo;m working on.
+I&amp;rsquo;ve always been a fan of non technical presentations that talked about we can improve the ways we make software and deal with code rather than just dumping new technologies and going through README sections.</description>
     </item>
     
     <item>
@@ -135,17 +122,8 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Tue, 22 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2015-09-22-custom-elements/</guid>
-      <description>An example on moving from jQuery plugins into Web Components, minus the hype</description>
-    </item>
-    
-    <item>
-      <title>gems, executáveis e configurações</title>
-      <link>https://lucasmazza.website/talks/tools/</link>
-      <pubDate>Fri, 18 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://lucasmazza.website/talks/tools/</guid>
-      <description>RubyConf Brasil 2015
- </description>
+      <description>Web Components have been an controversial subject that surfaced in the Front end world over the last years that I&amp;rsquo;m still pretty skeptical about its usage on existing and greenfield projects due the lack of good examples on how they can be rolled out to production, but I believe there is a way to get started with them without buying in all the hype.
+The whole Web Components spec holds four different standards, but the Custom Elements has some interesting features that can be useful to a lot of common tasks from regular projects.</description>
     </item>
     
     <item>
@@ -154,7 +132,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/</guid>
-      <description>Where the author kinda regrets getting too attached to RSpec</description>
+      <description>Ever since I started working with Ruby I have been using RSpec to test my apps and gems without giving minitest much thought. Recently I started a new non-Rails project and decided to give Minitest a try just for the fun of it. Migrating from one tool to another was refreshingly fun due to the fact that that Minitest and RSpec aren&amp;rsquo;t so different from each other - they both have the basic features that we need in a testing library to get things running, and if you are used to testing your code moving from one to the other might not be so scary as you might expect.</description>
     </item>
     
     <item>
@@ -163,7 +141,8 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Wed, 13 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2014-08-13-css-at-plataformatec/</guid>
-      <description>A quick walkthrough on how we wrote CSS back in 2014</description>
+      <description>Last month some amazing developers gave a sneak peek on how they write CSS in their companies - Mark Otto has written about CSS at GitHub, followed by Ian Feather&amp;rsquo;s post about Lonely Planet&amp;rsquo;s CSS and Chris Coyier write up about CodePen&amp;rsquo;s code - so I thought about sharing a bit of how we have been doing CSS in our projects here at Plataformatec over the last years.
+After working on different projects with different styles of CSS, we wrote some Guidelines of what kind of code we would like to work with.</description>
     </item>
     
     <item>
@@ -172,7 +151,8 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/</guid>
-      <description>A quick rundown over some Rails 4.1 features</description>
+      <description>Rails 4.1 was just released this week and I already had a great experience trying out the release candidates on my latest project, so I decided to write a bit about my favorites features on this release and some things I have learned by using them so far.
+1) secrets.yml Placing your configuration in a YAML file isn&amp;rsquo;t exactly a revolutionary feature, but the usage of the config/secrets.yml file that comes with Rails 4.</description>
     </item>
     
     <item>
@@ -181,7 +161,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Mon, 25 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2013-02-25-extending-customizing-3rd-party-code/</guid>
-      <description>Thoughts on dealing with code dependencies</description>
+      <description>We have a gem available for every kind of feature or scenario we might face in our applications and that may help us focus our development time on things that are more important to our applications. But, every now and then, these packaged solutions aren&amp;rsquo;t exactly what we need, and some sort of customization needs to be done on top of that - a different authentication strategy, new ways to query for data and several different things that our business rules might require.</description>
     </item>
     
     <item>
@@ -190,7 +170,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <pubDate>Wed, 27 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://lucasmazza.website/posts/2012-06-27-flushing-content-blocks-with-rails-4/</guid>
-      <description>Old trick with the Action Pack &lt;code&gt;content_for&lt;/code&gt; helper</description>
+      <description>Besides the big and shiny features that Rails 4 holds, there&amp;rsquo;s a lot of small improvements on several other sections of the Rails framework - helpers, core extensions, app configurations and more - that might not even hit the Changelogs but will somehow make our lifes easier in the future. One of these hidden gems that I&amp;rsquo;ve found recently is an improvement on the content_for helper to flush and replace previous chunks of HTML with new ones.</description>
     </item>
     
     <item>
@@ -201,7 +181,7 @@ Vamos ver um pouco do passado e presente do uso de features toggles, a sua facil
       <guid>https://lucasmazza.website/about/</guid>
       <description>I currently live in São Paulo, Brazil and I work with web development I have experience doing consulting projects and product development with both Ruby and Elixir and a deep interest on making development work easier through automation, development tools and monitoring.
 Outside of work you can find me enjoying specialty coffee, cooking and some casual gaming sessions.
-On the internet  GitHub: Open source projects and contributions. Twitter: Occasional tweets, pt-BR or en-US.</description>
+On the internet GitHub: Open source projects and contributions. Twitter: Occasional tweets, pt-BR or en-US.</description>
     </item>
     
   </channel>
