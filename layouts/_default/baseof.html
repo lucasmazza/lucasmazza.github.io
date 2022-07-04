@@ -1,7 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -17,9 +17,14 @@
       <meta property="og:url" content="{{ .Permalink }}"/>
       {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image | absURL }}"/>{{ end }}
       {{ if .Params.description }}<meta property="og:description" content="{{ .Params.description }}"/>{{ end }}
+
       <meta name="twitter:card" content="summary"/>
-      {{ if .Site.Params.twitter_handle }}<meta name="twitter:site" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
-      {{ if .Site.Params.twitter_handle }}<meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
+      {{ if .Site.Params.twitterHandle }}<meta name="twitter:site" content="{{ .Site.Params.twitterHandle }}"/>{{ end }}
+      {{ if .Site.Params.twitterHandle }}<meta name="twitter:creator" content="{{ .Site.Params.twitterHandle }}"/>{{ end }}
+
+      {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+      {{ end -}}
     {{ end }}
   </head>
   <body>

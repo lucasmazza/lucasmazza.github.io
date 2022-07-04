@@ -30,3 +30,13 @@ security:
       - '(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$'
       - ^ASDF_DIR$
       - ^HOME$
+
+outputs:
+  home: 
+    - html
+    - rss
+  section:
+    - html
+
+params:
+  twitterHandle: '@lucasmazza'
