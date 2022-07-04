@@ -1,4 +1,4 @@
-&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lucas Mazza</title>
@@ -8,7 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://lucasmazza.website/index.xml" rel="self" type="application/rss+xml" />
     <item>
-    <WAT>posts</WAT>
       <title>Git Field Guide</title>
       <link>https://lucasmazza.website/posts/2018-02-20-git-field-guide/</link>
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
@@ -135,7 +134,6 @@ can check my &lt;a href=&#34;https://github.com/lucasmazza/dotfiles/blob/master/
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Experimenting with explicit contracts with Ruby</title>
       <link>https://lucasmazza.website/posts/2016-02-29-experimenting-with-explicit-contracts-with-ruby/</link>
       <pubDate>Mon, 29 Feb 2016 00:00:00 +0000</pubDate>
@@ -272,7 +270,6 @@ can check my &lt;a href=&#34;https://github.com/lucasmazza/dotfiles/blob/master/
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Books from 2015</title>
       <link>https://lucasmazza.website/posts/2015-12-31-books-from-2015/</link>
       <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
@@ -336,7 +333,6 @@ that I can hit the 12 books goal instead of getting so close like this year.&lt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Software is a multiverse</title>
       <link>https://lucasmazza.website/posts/2015-11-24-multiverse/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
@@ -380,7 +376,6 @@ bad thing.&lt;/p&gt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Revising talks on code and craft</title>
       <link>https://lucasmazza.website/posts/2015-10-01-revising-talks/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
@@ -451,7 +446,6 @@ application or other gems that might use a performance bump.&lt;/p&gt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Sane usage of Custom Elements</title>
       <link>https://lucasmazza.website/posts/2015-09-22-custom-elements/</link>
       <pubDate>Tue, 22 Sep 2015 00:00:00 +0000</pubDate>
@@ -621,7 +615,6 @@ the first ones that come to mind.&lt;/p&gt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Nobody told me Minitest was this fun</title>
       <link>https://lucasmazza.website/posts/2015-05-11-nobody-told-me-minitest-was-this-fun/</link>
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
@@ -778,7 +771,6 @@ the first ones that come to mind.&lt;/p&gt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>CSS at Plataformatec</title>
       <link>https://lucasmazza.website/posts/2014-08-13-css-at-plataformatec/</link>
       <pubDate>Wed, 13 Aug 2014 00:00:00 +0000</pubDate>
@@ -818,7 +810,6 @@ the first ones that come to mind.&lt;/p&gt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>3 features from Rails 4.1 that I&#39;m excited about</title>
       <link>https://lucasmazza.website/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/</link>
       <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
@@ -872,7 +863,6 @@ the first ones that come to mind.&lt;/p&gt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Extending and customizing 3rd party code</title>
       <link>https://lucasmazza.website/posts/2013-02-25-extending-customizing-3rd-party-code/</link>
       <pubDate>Mon, 25 Feb 2013 00:00:00 +0000</pubDate>
@@ -925,7 +915,6 @@ the first ones that come to mind.&lt;/p&gt;
     </item>
     
     <item>
-    <WAT>posts</WAT>
       <title>Flushing content blocks with Rails 4</title>
       <link>https://lucasmazza.website/posts/2012-06-27-flushing-content-blocks-with-rails-4/</link>
       <pubDate>Wed, 27 Jun 2012 00:00:00 +0000</pubDate>
