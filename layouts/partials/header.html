@@ -25,6 +25,6 @@
 </div>
 
 {{- define "scripts" -}}
-  {{ $js := resources.Get "js/menu.js" | js.Build "menu.js" }}
+  {{ $js := resources.Get "js/menu.js" | js.Build "menu.js" | fingerprint }}
   <script defer src="{{ $js.RelPermalink }}"></script>
 {{- end -}}
