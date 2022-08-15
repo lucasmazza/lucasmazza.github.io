@@ -27,7 +27,12 @@
       {{ end -}}
     {{ end }}
   </head>
-  <body>
+  {{ if .Params.cover }}
+    <body class="text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/X1oAPDcxFIg');">
+  {{ else }}
+    <body>
+  {{ end }}
+
     {{ block "main" . }}
     {{ end }}
     {{ block "scripts" . }}
