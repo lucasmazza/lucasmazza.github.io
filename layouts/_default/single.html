@@ -1,16 +1,29 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
 
-  <div class="mx-auto lg:w-7/12 px-4 mb-4 lg:p-0">
+  {{ if .Params.image }}
+  <div
+    class="h-32 lg:h-52 mb-8 bg-fixed bg-center bg-cover"
+    style="background-image: url({{ .Params.image }})">
+
+    <h1 class="flex items-center px-8 justify-center font-extrabold text-2xl lg:text-4xl text-center text-white bg-black/50 w-screen h-full">
+      {{ .Title }}
+    </h1>
+  </div>
+  {{ end }}
+
+  <div class="mx-auto lg:w-7/12 px-4 mt-4 lg:mt-8 lg:p-0">
     <div class="mb-8 lg:flex items-center">
-      <h1 class="font-extrabold text-4xl mr-auto">{{ .Title }}</h1>
+      {{ if not .Params.image }}
+        <h1 class="font-extrabold text-4xl">{{ .Title }}</h1>
+      {{ end }}
 
       {{ if .Date }}
-        <span class="bg-gray-100 text-gray-800 border border-gray-200 text-sm font-bold inline-flex items-center px-2.5 py-0.5 rounded mr-2 lg:mr-4 whitespace-nowrap">
+        <span class="inline-flex items-center text-sm mr-2 lg:mr-4 whitespace-nowrap ml-auto text-green-900">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
           </svg>
-          {{ dateFormat "Jan 2, 2006" .Date }}
+          Published on {{ dateFormat "Jan 2, 2006" .Date }}
         </span>
       {{ end }}
     </div>

@@ -16,9 +16,6 @@ module.exports = {
       },
       animation: {
         'waving-hand': 'wave 1.5s linear 5s infinite',
-      },
-      boxShadow: {
-        'r-drop': '20px 0 12px -2px rgba(0, 0, 0, .1)'
       }
     },
   },
