@@ -13,21 +13,61 @@
   {{ end }}
 
   <div class="mx-auto lg:w-7/12 px-4 mt-4 lg:mt-8 lg:p-0">
-    <div class="mb-8 lg:flex items-center">
-      {{ if not .Params.image }}
-        <h1 class="font-extrabold text-4xl">{{ .Title }}</h1>
-      {{ end }}
+    {{ if not .Params.aboutPage }}
+      <div class="mb-8 lg:flex items-center">
+        {{ if not .Params.image }}
+          <h1 class="font-extrabold text-4xl">{{ .Title }}</h1>
+        {{ end }}
 
-      {{ if .Date }}
-        <span class="inline-flex items-center text-sm mr-2 lg:mr-4 whitespace-nowrap ml-auto text-green-900">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
-          </svg>
-          Published on {{ dateFormat "Jan 2, 2006" .Date }}
-        </span>
-      {{ end }}
-    </div>
+        {{ if .Date }}
+          <span class="inline-flex items-center text-sm mr-2 lg:mr-4 whitespace-nowrap ml-auto text-green-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+            </svg>
+            Published on {{ dateFormat "Jan 2, 2006" .Date }}
+          </span>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ if .Params.aboutPage }}
+      {{ partial "banner.html" . }}
+    {{ end }}
+
     <article class="content-body pb-8">
+      {{ if .Params.aboutPage }}
+        <h1 class="hidden print:block font-extrabold text-4xl">{{ .Title }}</h1>
+
+        <div class="text-lg">
+          <img src="/images/lucas.jpg" alt="Lucas's face" class="float-right w-64 h-64 ml-4 rounded-md">
+
+          <p>
+            I’m a software engineer from São Paulo, Brazil with a decade of experience building systems and products with both 
+            <a href="https://elixir-lang.org">Elixir</a> and <a href="http://www.ruby-lang.org">Ruby</a>
+          </p>
+
+          <p>
+            I've helped bootstrap new products, rewrite legacy codebases into new systems and build all kinds of end user features out there, and I've always had a deep interest on making software development easier through automation, development tools and monitoring.
+          </p>
+
+          <p>
+            I like to work on small engineering teams that care about the quality of their work as much as
+            its outcome, and always want to the best work they can do.
+          </p>
+
+            <p>
+              You can check my work on open source software at <a href="https://github.com/lucasmazza">GitHub</a>,
+              follow me on twitter <a href="https://twitter.com/lucasmazza">@lucasmazza</a> or reach out via
+              <a href="https://linkedin.com/in/lucasmazza/">LinkedIn</a>, <a href="https://t.me/lucasmazza">Telegram</a> or
+              <a href="mailto:email@lucasmazza.website">e-mail</a> as well.
+            </p>
+
+            <p>Outside of work you can find me enjoying specialty coffee, having fun with my
+                <a href="https://instagram.com/corgi.brulee">corgi</a> or baking some delicious deserts.
+            </p>
+        </div>
+        <div class="clear-both"></div>
+        {{ end }}
       {{ .Content }}
     </article>
   </div>

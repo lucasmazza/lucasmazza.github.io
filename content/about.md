@@ -1,37 +1,21 @@
 ---
 title: Hello, I'm Lucas 👋
+aboutPage: true
 menu:
   main:
     name: "About me"
     weight: 100
 ---
-
-## I currently live in São Paulo, Brazil and I work with web development
-
-I have experience doing consulting projects and product development with both [Ruby](http://www.ruby-lang.org)
-and [Elixir](https://elixir-lang.org) and a deep interest on making development work
-easier through automation, development tools and monitoring.
-
-Outside of work you can find me enjoying specialty coffee, cooking and some casual
-gaming sessions.
-
-## On the internet
-
-* [GitHub](https://github.com/lucasmazza): Open source projects and contributions.
-* [Twitter](https://twitter.com/lucasmazza): Occasional tweets, pt-BR or en-US.
-* [Instagram](https://instagram.com/lucasmazza): mostly food pictures.
-* [Presentations](/presentations/): Collection of slide decks.
-* [E-mail](mailto:email@lucasmazza.website): for everything else.
-
-## Experience
+## Work
 ### [Remote](https://remote.com)
 #### Senior Software Engineer, Nov 2020 to July 2021
 
-I'm helping Remote rapid growth through working on new features from different product areas,
+I've helped Remote rapid growth through working on new features from different product areas,
 recruiting and onboarding new engineers and advocating for developer experience and platform
 stability as we expand into multiple countries and business verticals. 
 
-I worked on product areas like in app and email notification foundations, built support for 2FA authentication for users and rolled out SSO capabilities for customers and internal users of our platform.
+I worked on product areas like in app and email notification foundations, built support for 2FA authentication for all end users and rolled out SSO capabilities for customers and internal users
+use their own identity providers on the platform.
 ### [Podium](https://podium.com)
 #### Senior Software Engineer, Mar 2020 to Oct 2020
 
