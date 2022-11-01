@@ -13,7 +13,7 @@
 
   
 
-<link href="/css/index.min.482157b608992a35db84e964ec0125074bb98514a7def59b7e41801e0466964a.css" rel="stylesheet" />
+<link href="/css/index.min.200b3986d875de39757f4a30ef340810f506c611455481fcb56c08fa60817770.css" rel="stylesheet" />
       <meta name="description" content="A quick rundown over some Rails 4.1 features"/>
       <meta property="og:title" content="3 features from Rails 4.1 that I&#39;m excited about"/>
       <meta property="og:type" content="website"/>
@@ -35,7 +35,7 @@
   <div class="py-4 border-b border-slate-300 print:hidden">
   <div class="relative flex mx-auto lg:w-4/5 px-4 lg:p-0">
     <h1 class="flex mr-auto items-center">
-      <img src="/images/lucas.jpg" alt="Lucas's face" class="mr-1 w-12 h-12 lg:w-8 lg:h-8 rounded-md">
+      
       <a href="https://lucasmazza.website/" class="font-extrabold text-2xl text-green-700 whitespace-nowrap">Lucas Mazza</a>
     </h1>
 
@@ -77,21 +77,27 @@
   
 
   <div class="mx-auto lg:w-7/12 px-4 mt-4 lg:mt-8 lg:p-0">
-    <div class="mb-8 lg:flex items-center">
-      
-        <h1 class="font-extrabold text-4xl">3 features from Rails 4.1 that I&#39;m excited about</h1>
-      
+    
+      <div class="mb-8 lg:flex items-center">
+        
+          <h1 class="font-extrabold text-4xl">3 features from Rails 4.1 that I&#39;m excited about</h1>
+        
 
-      
-        <span class="inline-flex items-center text-sm mr-2 lg:mr-4 whitespace-nowrap ml-auto text-green-900">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
-          </svg>
-          Published on Apr 8, 2014
-        </span>
-      
-    </div>
+        
+          <span class="inline-flex items-center text-sm mr-2 lg:mr-4 whitespace-nowrap ml-auto text-green-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+            </svg>
+            Published on Apr 8, 2014
+          </span>
+        
+      </div>
+    
+
+    
+
     <article class="content-body pb-8">
+      
       <p>Rails 4.1 was just released this week and I already had a great experience trying out the release candidates on my latest project, so I decided to write a bit about my favorites features on this release and some things I have learned by using them so far.</p>
 <h3 id="1-secretsyml">1) secrets.yml</h3>
 <p>Placing your configuration in a YAML file isn&rsquo;t exactly a revolutionary feature, but the usage of the <code>config/secrets.yml</code> file that comes with Rails 4.1 holds a more important idea: the promise of a default approach for environment aware custom configuration on Rails applications. Over the years the community created several ways to manage such configuration so every app out there deals with this differently, but now we can use the Rails default as a standard just like we do with the app folder or the routing patterns, taking the configuration madness outside the list of things to worry about when working with Rails. So instead of dealing with multiple YAML files or constants left out inside initializers, we can go with the <code>secrets.yml</code> as the default for our apps.</p>
@@ -140,7 +146,7 @@
     </article>
   </div>
 
-  <div class="py-8 flex lg:mx-auto lg:w-7/12 border-t border-slate-300 lg:justify-center gap-4 print:hidden">
+  <div class="py-8 flex mx-auto lg:w-7/12 border-t border-slate-300 justify-center gap-4 print:hidden">
   <p class="font-xs text-green-900">
     Copyright &copy; 2022 Lucas Mazza
   </p>
