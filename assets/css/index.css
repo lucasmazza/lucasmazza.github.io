@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.content-body h1,
 .content-body h2,
 .content-body h3, 
 .content-body h4 {
@@ -10,6 +11,16 @@
 
 .content-body a {
   @apply text-blue-600 font-semibold underline;
+}
+
+.content-body h2 a,
+.content-body h3 a, 
+.content-body h4 a {
+  @apply font-extrabold;
+}
+
+.content-body h1 {
+  @apply text-3xl;
 }
 
 .content-body h2 {

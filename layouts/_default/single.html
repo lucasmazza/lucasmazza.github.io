@@ -12,7 +12,11 @@
   </div>
   {{ end }}
 
-  <div class="mx-auto lg:w-7/12 px-4 mt-4 lg:mt-8 lg:p-0">
+  {{ if .Params.aboutPage }}
+    {{ partial "banner.html" . }}
+  {{ end }}
+
+<div class="mx-auto lg:w-7/12 px-4 mt-4 lg:mt-8 lg:p-0">
     {{ if not .Params.aboutPage }}
       <div class="mb-8 lg:flex items-center">
         {{ if not .Params.image }}
@@ -30,44 +34,10 @@
       </div>
     {{ end }}
 
-    {{ if .Params.aboutPage }}
-      {{ partial "banner.html" . }}
-    {{ end }}
-
     <article class="content-body pb-8">
       {{ if .Params.aboutPage }}
-        <h1 class="hidden print:block font-extrabold text-4xl">{{ .Title }}</h1>
-
-        <div class="text-lg">
-          <img src="/images/lucas.jpg" alt="Lucas's face" class="w-40 h-40 rounded-full mb-4 mx-auto md:float-right md:w-64 md:h-64 md:mb-0 md:ml-4">
-
-          <p>
-            I’m a software engineer from São Paulo, Brazil with a decade of experience building systems and products with both 
-            <a href="https://elixir-lang.org">Elixir</a> and <a href="http://www.ruby-lang.org">Ruby</a>
-          </p>
-
-          <p>
-            I've helped bootstrap new products, rewrite legacy codebases into new systems and build all kinds of end user features out there, and I've always had a deep interest on making software development easier through automation, development tools and monitoring.
-          </p>
-
-          <p>
-            I like to work on small engineering teams that care about the quality of their work as much as
-            its outcome, and always want to the best work they can do.
-          </p>
-
-            <p>
-              You can check my work on open source software at <a href="https://github.com/lucasmazza">GitHub</a>,
-              follow me on twitter <a href="https://twitter.com/lucasmazza">@lucasmazza</a> or reach out via
-              <a href="https://linkedin.com/in/lucasmazza/">LinkedIn</a>, <a href="https://t.me/lucasmazza">Telegram</a> or
-              <a href="mailto:email@lucasmazza.website">e-mail</a> as well.
-            </p>
-
-            <p>Outside of work you can find me enjoying specialty coffee, having fun with my
-                <a href="https://instagram.com/corgi.brulee">corgi</a> or baking some delicious deserts.
-            </p>
-        </div>
-        <div class="clear-both"></div>
-        {{ end }}
+        {{ partial "about-intro.html" . }}
+      {{ end }}
       {{ .Content }}
     </article>
   </div>

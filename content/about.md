@@ -6,9 +6,8 @@ menu:
     name: "About me"
     weight: 100
 ---
-## Work
-### [Remote](https://remote.com)
-#### Senior Software Engineer, Nov 2020 to July 2021
+# Work
+## Nov '20 to July '21 - [Remote](https://remote.com), Senior Software Engineer
 
 I've helped Remote rapid growth through working on new features from different product areas,
 recruiting and onboarding new engineers and advocating for developer experience and platform
@@ -16,14 +15,11 @@ stability as we expand into multiple countries and business verticals.
 
 I worked on product areas like in app and email notification foundations, built support for 2FA authentication for all end users and rolled out SSO capabilities for customers and internal users
 use their own identity providers on the platform.
-### [Podium](https://podium.com)
-#### Senior Software Engineer, Mar 2020 to Oct 2020
-
+## Mar '20 to Oct '20 - [Podium](https://podium.com), Senior Software Engineer
 At Podium I'm part of the Reviews team that is responsible for the maintenance of
 the backend services that powers our Reviews product.
 
-### [Magnetis](https://magnetis.com.br/)
-#### Senior Software Engineer and Team Leader, 2017 to 2019
+## '17 to '19 - [Magnetis](https://magnetis.com.br/), Senior Software Engineer and Team Leader
 
 As a Software Engineer, I've helped to adopt [Elixir](https://elixir-lang.org) and [Phoenix](http://www.phoenixframework.org)
 for new systems, improve our Kubernetes clustering setup and level up the code
@@ -35,8 +31,7 @@ while laying ground work of our own investment broker system. The team went from
 2 full time engineers to 8 people working on Elixir and Kubernetes to put the
 new services online and Ruby to integrate with the existing user facing application.
 
-### [Plataformatec](https://plataformatec.com.br)
-#### Software Developer, 2012 to 2017
+## '12 to '17 - [Plataformatec](https://plataformatec.com.br), Software Developer
 
 At Plataformatec I worked on consulting projects involving greenfield development
 of new Ruby on Rails systems and maintenance on apps requiring new features,
@@ -52,9 +47,8 @@ I've bootstraped an internal tool called Ebert that was spun into its own produc
 [SourceLevel](https://sourcelevel.io), working on development, infrastructure
 customer support for the product by myself for almost an year.
 
-## Publications
-
-**[HTML5 e CSS3: Domine a Web do Futuro](https://https://www.casadocodigo.com.br/products/livro-html-css) - July 31, 2012**
+# Publications
+## July 31, 2012 - [HTML5 e CSS3: Domine a Web do Futuro](https://https://www.casadocodigo.com.br/products/livro-html-css)
 
 The book is an introduction to HTML and CSS syntax along with common patterns to
 design UI elements like button groups, forms and media elements, using pseudo
