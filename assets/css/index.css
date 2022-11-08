@@ -19,21 +19,23 @@
   @apply font-extrabold;
 }
 
-.content-body h1 {
-  @apply text-3xl;
-}
-
-.content-body h2 {
-  @apply text-2xl;
-}
-
-.content-body h3 {
-  @apply text-xl;
-}
+.content-body h1 { @apply text-3xl; }
+.content-body h2 { @apply text-2xl; }
+.content-body h3 { @apply text-xl; }
 
 .content-body p,
 .content-body li {
   @apply mb-6 leading-relaxed;
+}
+
+@media print {
+  .content-body h1 { @apply text-2xl; }
+  .content-body h2 { @apply text-xl; }
+  .content-body h3 { @apply text-lg; }
+
+  .content-body p { 
+    @apply text-sm mb-4; 
+  }
 }
 
 .content-body ul {
