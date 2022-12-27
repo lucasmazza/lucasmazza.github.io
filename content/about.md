@@ -7,7 +7,7 @@ menu:
     weight: 100
 ---
 # Work
-## Nov '20 to July '21 - [Remote](https://remote.com), Senior Software Engineer
+## Nov '20 to July '22 - [Remote](https://remote.com), Senior Software Engineer
 
 I've helped Remote rapid growth through working on new features from different product areas,
 recruiting and onboarding new engineers and advocating for developer experience and platform
