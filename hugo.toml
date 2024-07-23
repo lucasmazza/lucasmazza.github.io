@@ -1,0 +1,71 @@
+baseURL = 'https://lucasmazza.website/'
+languageCode = 'en-us'
+title = 'Lucas Mazza'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+
+# Appearance settings
+theme = 'light'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = "Hi, I'm Lucas 👋!"
+homeIntroContent = """
+I'm a software engineer from São Paulo, Brazil that works with **Elixir** and **Ruby**.
+Outside work hours, you can find me [cooking](https://lucasmazza.notion.site/lucasmazza/Receitas-79a5a48a2350465dad3c57ba866f95d4), playing video games or spending some time with my [lovely dog](https://instagram.com/corgi.brulee).
+"""
+
+# Collection to display on home
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 5
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = false
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/lucasmazza/"
+
+[[params.social]]
+name = "twitter"
+url = "https://twitter.com/lucasmazza"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/lucasmazza"
+
+[[params.social]]
+name = "mastodon"
+url = "https://mastodon.social/lucasmazza"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "talks"
+url = "/talks"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'tango'

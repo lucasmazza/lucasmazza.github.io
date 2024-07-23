@@ -1,0 +1,49 @@
+:root {
+  --main-width: 1024px; /* overrides default of 780px */
+}
+
+.header-title {
+  position: relative;
+  padding-left: 56px;
+}
+
+.header-title::before {
+  content:"";
+  position:absolute;
+  border-radius: .25em;
+  background-image: url("/images/headshot.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 48px;
+  width: 48px;
+  top: calc(50% - 24px);
+  left: 0;
+}
+
+.intro a,
+.small > a {
+  color: rgb(21, 128, 61);
+}
+
+.line-title > a,
+.single-content a,
+.single-pagination-text > a,
+.pagination-control > a {
+  /* color: rgb(37, 99, 235); */
+  color: rgb(21, 128, 61);
+}
+.line-title > a {
+  font-weight: bold;
+}
+
+p > code,
+li > code {
+  white-space: nowrap;
+  border-radius: .375rem;
+  background-color: rgb(229, 231, 235);
+  padding: .4rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
