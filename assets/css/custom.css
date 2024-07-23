@@ -1,5 +1,6 @@
 :root {
   --main-width: 1024px; /* overrides default of 780px */
+  --theme-main-color: rgb(21, 128, 61);
 }
 
 .header-title {
@@ -22,17 +23,31 @@
   left: 0;
 }
 
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .375em;
+  padding: .25em;
+}
+
+.social-icons a:hover {
+  background-color: var(--theme-main-color);
+  color: #fff;
+}
+
 .intro a,
 .small > a {
-  color: rgb(21, 128, 61);
+  color:  var(--theme-main-color);
 }
 
 .line-title > a,
 .single-content a,
 .single-pagination-text > a,
 .pagination-control > a {
-  /* color: rgb(37, 99, 235); */
-  color: rgb(21, 128, 61);
+  color:  var(--theme-main-color);
 }
 .line-title > a {
   font-weight: bold;
