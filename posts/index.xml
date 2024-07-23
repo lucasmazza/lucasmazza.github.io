@@ -1,61 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Lucas Mazza</title>
-    <link>https://lucasmazza.website/</link>
-    <description>Recent content in Home on Lucas Mazza</description>
+    <title>Blog on Lucas Mazza</title>
+    <link>https://lucasmazza.website/posts/</link>
+    <description>Recent content in Blog on Lucas Mazza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lucasmazza.website/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ecto sem SQL</title>
-      <link>https://lucasmazza.website/talks/ecto-sem-sql/</link>
-      <pubDate>Sat, 06 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://lucasmazza.website/talks/ecto-sem-sql/</guid>
-      <description>Elug SP - 07/2019&#xA;Um dos objetivos do design do ecto é ser um &amp;ldquo;toolkit para mapeamento de dados&amp;rdquo; independente do uso de um banco de dados por de trás dos panos, e nesta palestra vamos ver alguns casos de uso de schemas e changesets em situações diferentes de aplicações onde um banco de dados não está presente mas o ecto nos ajuda a resolver problemas no dia a dia.</description>
-    </item>
-    <item>
-      <title>Feature Toggles</title>
-      <link>https://lucasmazza.website/talks/feature-toggles/</link>
-      <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://lucasmazza.website/talks/feature-toggles/</guid>
-      <description>Guru SP - 08/2018, Elug SP - 08/2018&#xA;Feature toggles são uma técnica muito versátil para ajudar o trabalho de disponibilizar novas funcionalidades em produção sem quebrar a experiência de clientes e fazer entregas graduais, mas acabamos aprendendo sobre toggles de uma forma superficial no dia a dia.&#xA;Vamos ver um pouco do passado e presente do uso de features toggles, a sua facilidade de uso graças a ferramentas open source e considerações a serem feitas sobre como e quando usar toggles na sua aplicação</description>
-    </item>
-    <item>
-      <title>Testes automatizados e a prática antes da teoria</title>
-      <link>https://lucasmazza.website/talks/testes/</link>
-      <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://lucasmazza.website/talks/testes/</guid>
-      <description>Guru SP - 02/2018&#xA;Escrever testes automáticos é uma prática bem estabelecida na comunidade Ruby, mas o quão bons são os testes que escrevemos? Na correria do dia a dia, estamos testando de forma efetiva ou só escrevendo mais código? Nesta palestra vamos ver alguns vícios e más práticas tradicionais de projetos Ruby, como podemos evitá-los e escrever testes melhores, e quais mudanças de pensando e práticas podemos adotar para aprimorar a nossa escrita de testes de software.</description>
-    </item>
+    <lastBuildDate>Wed, 27 Jun 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lucasmazza.website/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Field Guide</title>
       <link>https://lucasmazza.website/posts/2018-02-20-git-field-guide/</link>
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       <guid>https://lucasmazza.website/posts/2018-02-20-git-field-guide/</guid>
       <description>Git has become an indispensable tool of software development, regardless of which language or framework your team uses it. But in the other hand, it isn&amp;rsquo;t a tool that you can adopt, learn and be effective from day 1 - it takes time and guidance to master it, both in the command line the integrations and practices most teams have adopted.&#xA;I&amp;rsquo;ve put up together a guide on how I see and use git on my day to day work, that can be used as a starting both for both newcomers who are trying to grok or more experienced professionals who want to make a more effective use of it on they work.</description>
-    </item>
-    <item>
-      <title>Circuit Breakers em Ruby</title>
-      <link>https://lucasmazza.website/talks/circuit-breakers/</link>
-      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://lucasmazza.website/talks/circuit-breakers/</guid>
-      <description>Guru SP - 11/2016</description>
-    </item>
-    <item>
-      <title>The Zen and Art of Refactoring</title>
-      <link>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</link>
-      <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</guid>
-      <description>RubyConf Brazil 2016&#xA;Refactoring is often seen as a process where we make bad code better by waving our wands and casting our secret spells while facing our editors, which usually happens when things are on fire and the pressure is on. Changing software should be easier and not scary, and one of the first steps to do it is not to try to write future-proof code, but we can adopt different steps to think about the changes we want to do and how we can do them.</description>
-    </item>
-    <item>
-      <title>Minitest: voltando ao básico sobre testes</title>
-      <link>https://lucasmazza.website/talks/minitest/</link>
-      <pubDate>Sat, 23 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://lucasmazza.website/talks/minitest/</guid>
-      <description>Guru SP - 07/2016&#xA;Minitest nasceu como uma alternativa ao test/unit do Ruby 1.8 e se tornou um framework de testes extremamente robusto e ao mesmo tempo simples, e está disponível em qualquer instalação de Ruby hoje em dia, para todos escrevem testes sem muita burocracia.</description>
     </item>
     <item>
       <title>Experimenting with explicit contracts with Ruby</title>
@@ -126,13 +84,6 @@
       <pubDate>Wed, 27 Jun 2012 00:00:00 +0000</pubDate>
       <guid>https://lucasmazza.website/posts/2012-06-27-flushing-content-blocks-with-rails-4/</guid>
       <description>Besides the big and shiny features that Rails 4 holds, there&amp;rsquo;s a lot of small improvements on several other sections of the Rails framework - helpers, core extensions, app configurations and more - that might not even hit the Changelogs but will somehow make our lifes easier in the future. One of these hidden gems that I&amp;rsquo;ve found recently is an improvement on the content_for helper to flush and replace previous chunks of HTML with new ones.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lucasmazza.website/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lucasmazza.website/about/</guid>
-      <description>Work Mar &amp;lsquo;23 - Present Tremendous, Senior Software Engineer&#xA;Businesses use Tremendous to send one-off payments to people around the world–for completing surveys, participating in user research calls, doing take-home projects, reporting bugs, booking demos, etc.&#xA;At Tremendous, I work on our Platform team to ensure our product is stable, fast and available to customers, while also supporting our engineering teams by improving our infrastructure and development experience so they can do their best work.</description>
     </item>
   </channel>
 </rss>

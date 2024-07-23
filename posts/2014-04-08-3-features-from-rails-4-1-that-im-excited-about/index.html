@@ -1,104 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us"
+  dir="ltr">
+
   <head>
     <meta charset="utf-8">
-    <title>3 features from Rails 4.1 that I&#39;m excited about - Lucas Mazza</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<meta name="viewport" content="width=device-width"><meta name="description" content="A quick rundown over some Rails 4.1 features" />
+
+<title>
+    
+    3 features from Rails 4.1 that I&#39;m excited about | Lucas Mazza
+    
+</title>
+
+<link rel="canonical" href="https://lucasmazza.website/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/" />
 
 
 
-  
 
-<link href="/css/index.min.6e80c00c6ea57289fabce8d4412c05518d5b38fe59b85286f2e209f0773dc11e.css" rel="stylesheet" />
-      <meta name="description" content="A quick rundown over some Rails 4.1 features"/>
-      <meta property="og:title" content="3 features from Rails 4.1 that I&#39;m excited about"/>
-      <meta property="og:type" content="website"/>
-      <meta property="og:url" content="https://lucasmazza.website/posts/2014-04-08-3-features-from-rails-4-1-that-im-excited-about/"/>
-      
-      <meta property="og:description" content="A quick rundown over some Rails 4.1 features"/>
 
-      <meta name="twitter:card" content="summary"/>
-      <meta name="twitter:site" content="@lucasmazza"/>
-      <meta name="twitter:creator" content="@lucasmazza"/>
 
-      
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.52abaa1c566a5f26056218d5d2c41964dedac454973c4708d8fd787ebe241064.css" media="all">
+
+
+
+
+
+
   </head>
+
   
-    <body>
+
   
+  
+  
+
+  <body class="light">
+
+    <div class="content">
+      <header>
+        
+
+<div class="header">
 
     
-  <div class="py-4 border-b border-slate-300 print:hidden">
-  <div class="relative flex mx-auto lg:w-4/5 px-4 lg:p-0">
-    <h1 class="flex mr-auto items-center">
-      
-      <a href="https://lucasmazza.website/" class="font-extrabold text-2xl text-green-700 whitespace-nowrap">Lucas Mazza</a>
-    </h1>
 
-    <div class="lg:hidden">
-			<button id="menu-action" class="navbar-burger flex items-center text-green-700 p-3">
-				<svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<title>Mobile menu</title>
-					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-				</svg>
-			</button>
-		</div>
-    <ul id="menu-target" class="hidden absolute top-full left-0 w-screen divide-y border-y bg-white lg:border-none lg:divide-none lg:static lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6 lg:gap-3">
-      
-      
-        <li class="p-4 text-xl lg:p-0 lg:text-base">
-          <a href="https://lucasmazza.website/about/" class="hover:underline hover:text-green-900 ">About me</a>
-        </li>
-      
-        <li class="p-4 text-xl lg:p-0 lg:text-base">
-          <a href="https://lucasmazza.website/posts/" class="hover:underline hover:text-green-900 ">Posts</a>
-        </li>
-      
-        <li class="p-4 text-xl lg:p-0 lg:text-base">
-          <a href="https://lucasmazza.website/talks/" class="hover:underline hover:text-green-900 ">Presentations</a>
-        </li>
-      
-        <li class="p-4 text-xl lg:p-0 lg:text-base">
-          <a href="https://lucasmazza.website/htmlcss-exemplos" class="hover:underline hover:text-green-900 ">Livro HTML5 e CSS 3 →</a>
-        </li>
-      
-        <li class="p-4 text-xl lg:p-0 lg:text-base">
-          <a href="https://lucasmazza.notion.site/lucasmazza/Receitas-79a5a48a2350465dad3c57ba866f95d4" class="hover:underline hover:text-green-900 ">Receitas →</a>
-        </li>
-      
-    </ul>
-  </div>
+    <h1 class="header-title">Lucas Mazza</h1>
+
+    <div class="flex">
+        
+
+        
+        
+        <p class="small ">
+            <a href="/">
+                /home
+            </a>
+        </p>
+        
+        <p class="small ">
+            <a href="/posts">
+                /posts
+            </a>
+        </p>
+        
+        <p class="small ">
+            <a href="/talks">
+                /talks
+            </a>
+        </p>
+        
+        <p class="small ">
+            <a href="/about">
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
 </div>
+      </header>
 
-  
-
-  
-
-<div class="mx-auto lg:w-7/12 px-4 mt-4 lg:mt-8 lg:p-0">
-    
-      <div class="mb-8 lg:flex items-center">
-        
-          <h1 class="font-extrabold text-4xl">3 features from Rails 4.1 that I&#39;m excited about</h1>
+      <main class="main">
         
 
-        
-          <span class="inline-flex items-center text-sm mr-2 lg:mr-4 whitespace-nowrap ml-auto text-green-900">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
-            </svg>
-            Published on Apr 8, 2014
-          </span>
-        
-      </div>
+
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
     
 
-    <article class="content-body pb-8">
+    <h1 class="single-title">3 features from Rails 4.1 that I&#39;m excited about</h1>
+    
+
+    
+
+    <p class="single-readtime">
       
-      <p>Rails 4.1 was just released this week and I already had a great experience trying out the release candidates on my latest project, so I decided to write a bit about my favorites features on this release and some things I have learned by using them so far.</p>
+      
+      
+      <time datetime="2014-04-08T00:00:00&#43;00:00">April 8, 2014</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <p>Rails 4.1 was just released this week and I already had a great experience trying out the release candidates on my latest project, so I decided to write a bit about my favorites features on this release and some things I have learned by using them so far.</p>
 <h3 id="1-secretsyml">1) secrets.yml</h3>
 <p>Placing your configuration in a YAML file isn&rsquo;t exactly a revolutionary feature, but the usage of the <code>config/secrets.yml</code> file that comes with Rails 4.1 holds a more important idea: the promise of a default approach for environment aware custom configuration on Rails applications. Over the years the community created several ways to manage such configuration so every app out there deals with this differently, but now we can use the Rails default as a standard just like we do with the app folder or the routing patterns, taking the configuration madness outside the list of things to worry about when working with Rails. So instead of dealing with multiple YAML files or constants left out inside initializers, we can go with the <code>secrets.yml</code> as the default for our apps.</p>
 <p>Remember that you can place any kind of configuration - not just secrets like tokens or passwords - that need to be handled differently through your application environments, like API Endpoints or S3 bucket names. And for any gem maintainers out there, you can make your gem read these settings from the <code>secrets.yml</code> automagically through an <a href="https://github.com/plataformatec/devise/blob/6027787930224b7c5306a15a81c26e9a7c21fe89/lib/devise/rails.rb#L32-L45">initializer</a> block and maybe remove a configuration step from the gem setup. Adding this to Devise on <a href="https://github.com/plataformatec/devise/pull/2835">this pull request</a> was easier than I expected and I suggest you to try it out on your gems as well.</p>
@@ -143,17 +173,113 @@
 <a href="http://blog.plataformatec.com.br/2014/04/3-features-from-rails-4-1-that-im-excited-about/">http://blog.plataformatec.com.br/2014/04/3-features-from-rails-4-1-that-im-excited-about/</a></p>
 </blockquote>
 
-    </article>
+    
   </div>
 
-  <div class="py-8 flex mx-auto lg:w-7/12 border-t border-slate-300 justify-center gap-4 print:hidden">
-  <p class="font-xs text-green-900">
-    Copyright &copy; 2022 Lucas Mazza
-  </p>
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flex">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/2013-02-25-extending-customizing-3rd-party-code/">
+                        Extending and customizing 3rd party code
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/posts/2014-08-13-css-at-plataformatec/">
+                        CSS at Plataformatec
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
 </div>
 
 
-    
-  <script defer src="/menu.08b9a569e417578ad09b03e0b4469fe181e7a74b3614ce1f7e2a7b98e7e99f29.js"></script>
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+      </main>
+    </div>
+
+    <footer>
+      <p>Powered by
+    <a href="https://gohugo.io/">Hugo</a>
+    and
+    <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+</p>
+
+
+    </footer>
+
   </body>
+
+  <script>
+
+  function isAuto() {
+    return document.body.classList.contains("auto");
+  }
+
+  function setTheme() {
+    if (!isAuto()) {
+      return
+    }
+
+    document.body.classList.remove("auto");
+    let cls = "light";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      cls = "dark";
+    }
+
+    document.body.classList.add(cls);
+  }
+
+  function invertBody() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+
+  if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+  }
+
+  setTheme();
+
+</script>
+
 </html>

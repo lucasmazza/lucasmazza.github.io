@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations on Lucas Mazza</title>
+    <link>https://lucasmazza.website/talks/</link>
+    <description>Recent content in Presentations on Lucas Mazza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Jul 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lucasmazza.website/talks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ecto sem SQL</title>
+      <link>https://lucasmazza.website/talks/ecto-sem-sql/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://lucasmazza.website/talks/ecto-sem-sql/</guid>
+      <description>Elug SP - 07/2019&#xA;Um dos objetivos do design do ecto é ser um &amp;ldquo;toolkit para mapeamento de dados&amp;rdquo; independente do uso de um banco de dados por de trás dos panos, e nesta palestra vamos ver alguns casos de uso de schemas e changesets em situações diferentes de aplicações onde um banco de dados não está presente mas o ecto nos ajuda a resolver problemas no dia a dia.</description>
+    </item>
+    <item>
+      <title>Feature Toggles</title>
+      <link>https://lucasmazza.website/talks/feature-toggles/</link>
+      <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://lucasmazza.website/talks/feature-toggles/</guid>
+      <description>Guru SP - 08/2018, Elug SP - 08/2018&#xA;Feature toggles são uma técnica muito versátil para ajudar o trabalho de disponibilizar novas funcionalidades em produção sem quebrar a experiência de clientes e fazer entregas graduais, mas acabamos aprendendo sobre toggles de uma forma superficial no dia a dia.&#xA;Vamos ver um pouco do passado e presente do uso de features toggles, a sua facilidade de uso graças a ferramentas open source e considerações a serem feitas sobre como e quando usar toggles na sua aplicação</description>
+    </item>
+    <item>
+      <title>Testes automatizados e a prática antes da teoria</title>
+      <link>https://lucasmazza.website/talks/testes/</link>
+      <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://lucasmazza.website/talks/testes/</guid>
+      <description>Guru SP - 02/2018&#xA;Escrever testes automáticos é uma prática bem estabelecida na comunidade Ruby, mas o quão bons são os testes que escrevemos? Na correria do dia a dia, estamos testando de forma efetiva ou só escrevendo mais código? Nesta palestra vamos ver alguns vícios e más práticas tradicionais de projetos Ruby, como podemos evitá-los e escrever testes melhores, e quais mudanças de pensando e práticas podemos adotar para aprimorar a nossa escrita de testes de software.</description>
+    </item>
+    <item>
+      <title>Circuit Breakers em Ruby</title>
+      <link>https://lucasmazza.website/talks/circuit-breakers/</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>https://lucasmazza.website/talks/circuit-breakers/</guid>
+      <description>Guru SP - 11/2016</description>
+    </item>
+    <item>
+      <title>The Zen and Art of Refactoring</title>
+      <link>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</link>
+      <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://lucasmazza.website/talks/zen-and-art-of-refactoring/</guid>
+      <description>RubyConf Brazil 2016&#xA;Refactoring is often seen as a process where we make bad code better by waving our wands and casting our secret spells while facing our editors, which usually happens when things are on fire and the pressure is on. Changing software should be easier and not scary, and one of the first steps to do it is not to try to write future-proof code, but we can adopt different steps to think about the changes we want to do and how we can do them.</description>
+    </item>
+    <item>
+      <title>Minitest: voltando ao básico sobre testes</title>
+      <link>https://lucasmazza.website/talks/minitest/</link>
+      <pubDate>Sat, 23 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://lucasmazza.website/talks/minitest/</guid>
+      <description>Guru SP - 07/2016&#xA;Minitest nasceu como uma alternativa ao test/unit do Ruby 1.8 e se tornou um framework de testes extremamente robusto e ao mesmo tempo simples, e está disponível em qualquer instalação de Ruby hoje em dia, para todos escrevem testes sem muita burocracia.</description>
+    </item>
+  </channel>
+</rss>
