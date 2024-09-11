@@ -14,7 +14,7 @@ colorPalette = 'default'
 hideHeader = false
 
 # Intro on main page, content is markdown
-homeIntroTitle = "Hi, I'm Lucas 👋!"
+homeIntroTitle = "Hi, I'm Lucas 😀!"
 homeIntroContent = """
 I'm a software engineer from São Paulo, Brazil that works with **Elixir** and **Ruby**.
 Outside work hours, you can find me [cooking](https://lucasmazza.notion.site/lucasmazza/Receitas-79a5a48a2350465dad3c57ba866f95d4), playing video games or spending some time with my [lovely dog](https://instagram.com/corgi.brulee).
